@@ -17,12 +17,16 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 ### UNIX based operating systems
 ### UNIX in Bioinformatics
 # Basic essential programs
-<p>The general structure of a command line: <br>
-For example: <br>
-    `echo hello world` <br>
-Now, copy and paste the command below to your terminal: <br>
-`git clone https://github.com/skDooley/shell_tutorial.git` #todo <br>
-Here, `git` is the program, `clone` and `https://github.com/skDooley/shell_tutorial.git` are arguments. </p>
+<p>The general structure of a command line: </p>
+
+For example:
+    `echo hello world`
+    
+Now, copy and paste the command below to your terminal: 
+`git clone https://github.com/skDooley/shell_tutorial.git #todo`
+
+Here, `git` is the program, `clone` and `https://github.com/skDooley/shell_tutorial.git` are arguments.
+
 #### pwd
 #### ls
 #### cd
