@@ -1,1 +1,46 @@
-# unix_basic
+## Bioinformatics and Computational Biology Programming Workshop 2021
+# Basic UNIX Totorial
+
+**Orginal material by [Shane Dooley](https://github.com/skDooley/shell_tutorial) and Dr. Geetu Tuteja.
+Modified and compiled by Ha Vu (Tuteja Lab).**
+
+### Outline
+0. Accessing HPC class
+1. Introduction to UNIX
+2. Basic essential programs
+3. Examining files on the command line
+4. Bedtools
+
+# Accessing HPC class
+# Introduction to UNIX
+### What is UNIX?
+### UNIX based operating systems
+### UNIX in Bioinformatics
+# Basic essential programs
+The general structure of a command line:
+For example:
+    `echo hello world`
+Now, copy and paste the command below to your terminal:
+`git clone https://github.com/skDooley/shell_tutorial.git` #todo
+Here, `git` is the program, `clone` and `https://github.com/skDooley/shell_tutorial.git` are arguments.
+#### pwd
+#### ls
+#### cd
+#### Relative vs. Absolute path
+#### Creation/Destruction
+#### Shortcuts, wild cards, and tab completion
+
+# Examining files on the command line
+#### clear
+#### cat
+#### less
+#### head
+#### tail
+#### grep
+#### uniq
+#### wc
+#### Redirect data `>`
+#### Append data `>>`
+#### Pipe
+
+# Bedtools
