@@ -41,6 +41,7 @@ Here, `git` is the program, `clone` and `https://github.com/skDooley/shell_tutor
 #### head
 #### tail
 #### grep
+#### sort
 #### uniq
 #### wc
 #### Redirect data `>`
