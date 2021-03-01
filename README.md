@@ -1,7 +1,7 @@
 ## Bioinformatics and Computational Biology Programming Workshop 2021
 # Basic UNIX Totorial
 
-**Orginal material by [Shane Dooley](https://github.com/skDooley/shell_tutorial) and Dr. Geetu Tuteja.
+**Original material by [Shane Dooley](https://github.com/skDooley/shell_tutorial) and Dr. Geetu Tuteja.
 Modified and compiled by Ha Vu (Tuteja Lab).**
 
 ### Outline
