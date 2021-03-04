@@ -49,11 +49,16 @@ UNIX is useful...
 
 For example:
     `echo hello world`
-    
-Now, copy and paste the command below to your terminal: 
-`git clone https://github.com/skDooley/shell_tutorial.git #todo`
+Here, `echo` is a program; `hello` and `world` are arguments.
 
-Here, `git` is the program, `clone` and `https://github.com/skDooley/shell_tutorial.git` are arguments.
+#### Tips
+• Attention to detail is important
+• Capitalization matters
+• Spaces matter
+• Semi colon, commas matter
+• Don’t try to rush through everything
+• Make sure you understand what you are doing and
+are not just blindly following the steps
 
 #### pwd
 #### ls
@@ -77,3 +82,8 @@ Here, `git` is the program, `clone` and `https://github.com/skDooley/shell_tutor
 #### Pipe
 
 # Bedtools
+
+Now, copy and paste the command below to your terminal: 
+`git clone https://github.com/skDooley/shell_tutorial.git #todo`
+
+Here, `git` is the program, `clone` and `https://github.com/skDooley/shell_tutorial.git` are arguments.
