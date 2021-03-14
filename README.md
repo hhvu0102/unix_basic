@@ -31,7 +31,7 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 - **Computing clusters are all linux based.**
 
 #### MacOSX
-- More user friendly for beginners
+- More user friendly for beginners.
 
 ### UNIX in Bioinformatics
 UNIX is useful...
@@ -45,22 +45,30 @@ UNIX is useful...
 # Accessing HPC class TODO: request HPC class, screenshots to illustrate
 
 # Basic essential programs
-<p>The general structure of a command line: </p>
+The general structure of a command line:
+`program argument1 argument2 ...`
 
 For example:
     `echo hello world`
-Here, `echo` is a program; `hello` and `world` are arguments.
+    
+| Term | Definition | Example |
+|:-:|:-:|:-:|
+|  program | the name (case sensitive) of the program  | echo |
+|  argument | additional information you give the program to get it to do what you want it to do.  | hello world |    
+
 
 #### Tips
-• Attention to detail is important
-• Capitalization matters
-• Spaces matter
-• Semi colon, commas matter
-• Don’t try to rush through everything
-• Make sure you understand what you are doing and
-are not just blindly following the steps
+- Attention to detail is important.
+    - Capitalization matters.
+    - Spaces matter.
+    - Semi colon, commas matter.
+- Don’t try to rush through everything.
 
 #### pwd
+`pwd = print working directory` 
+
+- Tells you where you are sitting in the directory tree.
+- Whenever you start up a terminal, you will start in a special directory called the `home` directory. Every user has their own home directory where they have full access to do whatever they want.
 #### ls
 #### cd
 #### Relative vs. Absolute path
