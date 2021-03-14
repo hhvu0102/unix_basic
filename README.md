@@ -46,9 +46,9 @@ UNIX is useful...
 
 # Basic essential programs
 The general structure of a command line:
-`program argument1 argument2 ...`
+`program [-flags] argument1 argument2 ...`
 
-For example:
+- For example:
     `echo hello world`
     
 | Term | Definition | Example |
@@ -56,6 +56,7 @@ For example:
 |  program | the name (case sensitive) of the program  | echo |
 |  argument | additional information you give the program to get it to do what you want it to do.  | hello world |    
 
+- Flags = options to run the program. Flags start with a single dash `-` or two dashes `--`, and change the behaviour of a command.
 
 #### Tips
 - Attention to detail is important.
@@ -71,6 +72,9 @@ For example:
 
 #### ls
 - `ls` = list the files in the current directory.
+- Another option: add flags to `ls`.
+    - For example: `ls -l` 
+- To explore all options to run `ls`, type `man ls`.
 
 #### cd
 - `cd` = change directory.
@@ -93,7 +97,20 @@ For example:
 - The parent directory is denoted by `..`.
     - When we do `cd ..`, this will put us one directory above where we were.
 
+
 #### Creation/Destruction
+| Command | Description |
+|:-:|:-:|
+|mkdir| makes a directory|
+|rmdir| removes an empty directory|
+|touch <nameOfFile>| creates an file|
+|rm <nameOfFile> | removes a file|
+|rm -r <directory> | removes an entire directory and all of its contents|
+|cp <filename> <destination>| copy a file to a location|
+|mv <filename> <destination>| moves a file to a location|
+
+`rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
+
 #### Shortcuts, wild cards, and tab completion
 
 # Examining files on the command line
