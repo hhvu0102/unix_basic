@@ -13,7 +13,7 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 
 # Some installations
 # Introduction to UNIX
-### What is UNIX? **TODO: images to illustrate Shell**
+### What is UNIX?
 - A common operating system.
 - What is an operating system?
     - An operating system is the suite of programs that make the computer work.
@@ -31,7 +31,7 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 - Linux is free (open source).
 - Linux is stable.
 - Linux systems are highly customizable.
-- **Computing clusters are all linux based.**
+- **Computing clusters are all Linux based.**
 
 #### MacOSX
 - More user friendly for beginners.
@@ -150,10 +150,36 @@ rm testdir
     
 # Examining files on the command line
 #### clear
+Sometimes your terminal is filled with past commands/outputs, and you want to have a clean terminal to avoid confusion. Then, you can do:
+
+`clear`
+
+or hit `Ctrl + l`.
+
+You can still scroll up to see past commands/outputs.
+
 #### cat
+- `cat` = concatnate.
+- Displays contents of file on screen.
+    - This will display the entire file at once. So it will look overwhelming if you have a big file!
+- If you put two file names, it will display the first file, followed by the 2nd file.
+
 #### less
+- `less` opens the file, and lets you navigate through it.
+- Use "space" to go forward and hit the "b" key to go backwards.
+- The "g" key goes to the beginning of the file and "G" goes to the end.
+- Finally, hit "q" to quit.
+
 #### head
+- `head` writes the first ten lines of a file to the screen.
+- To change the number of lines printed, type `head -n <number> <file name>`.
+    - For example, `head -n 5 `
+
 #### tail
+- `tail` writes the last ten lines of a file to the screen.
+- To change the number of lines printed, type `tail -n <number> <file name>`.
+    - For example, `tail -n 5 `
+    
 #### grep
 #### sort
 #### uniq
