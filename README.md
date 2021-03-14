@@ -22,7 +22,8 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
     - The **shell** is the interface between the user and a kernel. It is a **command line** interpreter.
     - Shell commands can be run in the **terminal**.
     
-![Shell](images/shell.png)
+<img src="/images/SHELL.png" width="500" height="400"/>
+
 ### UNIX based operating systems
 #### Linux
 - Operating system and bundled application programs.
