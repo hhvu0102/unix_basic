@@ -21,6 +21,8 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
     - The **kernel** is the hub of the operating system. It allocates time and memory to programs.
     - The **shell** is the interface between the user and a kernel. It is a **command line** interpreter.
     - Shell commands can be run in the **terminal**.
+    
+![Shell](images/shell.png)
 ### UNIX based operating systems
 #### Linux
 - Operating system and bundled application programs.
