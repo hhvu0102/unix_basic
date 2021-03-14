@@ -108,11 +108,43 @@ The general structure of a command line:
 |rm -r <directory> | removes an entire directory and all of its contents|
 |cp <filename> <destination>| copy a file to a location|
 |mv <filename> <destination>| moves a file to a location|
+    
+For example:
+```
+mkdir testdir
+cd testdir
+touch testfile.txt
+ls
+cd ../
+rm testdir
+```
 
 `rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
 
 #### Shortcuts, wild cards, and tab completion
+##### Tilde ~
+- `~` = a shortcut for your home directory.
+- For example:
+    `ls ~`
+   
+##### Wild card
+- The `*` character matches against any character.
+- For example, the following command list all the text files in our current directory:
+    `ls *.txt`
 
+##### Tab Completion
+- Navigate to the home directory. Typing out directory names can waste a lot of time. When you start typing out the name of a directory, then hit the tab key, the shell will try to fill in the rest of the directory name. For example, enter:
+
+    `cd u<tab>`
+    
+- The shell will fill in the rest of the directory name for `unix_basic`. Now enter:
+
+    `ls ~/unix_basic/practice/ex<tab><tab>`
+    
+- When you hit the first tab, nothing happens. The reason is that there are multiple directories in the home directory which start with `ex`. Thus, the shell does not know which one to fill in. When you hit tab again, the shell will list the possible choices.
+- Tab completion can also fill in the names of programs. For example, enter `e<tab><tab>`. You will see the name of every program that starts with an `e`. One of those is `echo`. If you enter `ec<tab>` you will see that tab completion works.
+
+    
 # Examining files on the command line
 #### clear
 #### cat
