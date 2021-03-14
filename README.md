@@ -9,7 +9,7 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 1. Introduction to UNIX
 2. Basic essential programs
 3. Examining files on the command line
-4. Bedtools
+4. Conclusion
 
 # Some installations
 # Introduction to UNIX
@@ -159,7 +159,7 @@ or hit `Ctrl + l`.
 You can still scroll up to see past commands/outputs.
 
 #### cat
-- `cat` = concatnate.
+- `cat` = concatenate.
 - Displays contents of file on screen.
     - This will display the entire file at once. So it will look overwhelming if you have a big file!
 - If you put two file names, it will display the first file, followed by the 2nd file.
@@ -181,14 +181,50 @@ You can still scroll up to see past commands/outputs.
     - For example, `tail -n 5 `
     
 #### grep
+- `grep` can search files for specific words or patterns.
+- For example:
+    
+    
 #### sort
-#### uniq
-#### wc
-#### Redirect data `>`
-#### Append data `>>`
-#### Pipe
+- `sort` provides different options to sort a file.
+- For example, `sort ` will sort the file `` alphabetically based on the first column.
+- If your file has multiple columns, you can use `-k` and the column number to sort by another column than the first (default).
+- For more options in `sort`, type `man sort`.
 
-# Bedtools
+#### uniq
+- `uniq` can be used to identify lines that occur uniquely in a file (`-u`), lines that are duplicated in a file (`-d`), or to count the number of occurrences in a file (`-c`)
+- Without any options, it is similar to `sort -u` (which only keeps unique entries).
+- Files must be sorted before running this command.
+
+#### wc
+- `wc` will print newline, word, and byte counts for each file.
+- Do `man wc` to find out all options in `wc`.
+- For example, if you want to count the number of lines in a file:
+`wc -l `
+
+#### Redirect data `>`
+- The following command puts the output on the screen.
+
+`grep "" `
+
+- What if you want to store the output to another file?
+
+`grep "" > `
+
+#### Append data `>>`
+- What if you want to add the "" search results to your output file that already exists?
+
+`grep -i 'spinning top' science.txt >> scienceOutput.txt`
+
+- If you only used the `>` the text that was already in the file would be overwritten.
+
+#### Pipe `|`
+- The `|` command (hit `Shift + \`) allows you to connect the output of one command to the next command.
+- Save time and memory when programming!
+- For example:
+- 
+# Conclusion
+
 
 Now, copy and paste the command below to your terminal: 
 `git clone https://github.com/skDooley/shell_tutorial.git #todo`
