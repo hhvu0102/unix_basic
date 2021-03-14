@@ -65,13 +65,34 @@ For example:
 - Don’t try to rush through everything.
 
 #### pwd
-`pwd = print working directory` 
-
+- `pwd` = print working directory.
 - Tells you where you are sitting in the directory tree.
 - Whenever you start up a terminal, you will start in a special directory called the `home` directory. Every user has their own home directory where they have full access to do whatever they want.
+
 #### ls
+- `ls` = list the files in the current directory.
+
 #### cd
-#### Relative vs. Absolute path
+- `cd` = change directory.
+- Helps you navigate between different directories.
+
+#### Root vs home; Relative vs. absolute path
+- Root = the first or top-most directory in a hierarchy.
+- `home` directory is under the root.
+- Where you are in the directory tree is called your path.
+- In a path name, different directories and file names are separated by a slash `/`. The root has no name, so it's only one slash `/`.
+    - For example:
+    ```
+    cd /
+    pwd
+    ```
+- A path is either relative or absolute:
+    - An absolute path = the root element and the complete directory list. For example, `/home/hhvu/unix_basic` is an absolute path.
+    - A relative path needs to be combined with another path in order to access a file. For example, `unix_basic/practice` is a relative path.
+- The current directory is denoted by `.`.
+- The parent directory is denoted by `..`.
+    - When we do `cd ..`, this will put us one directory above where we were.
+
 #### Creation/Destruction
 #### Shortcuts, wild cards, and tab completion
 
