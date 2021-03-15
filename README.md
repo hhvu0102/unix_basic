@@ -47,6 +47,10 @@ UNIX is useful...
 
 # Accessing HPC class TODO: request HPC class, screenshots to illustrate
 
+Now, copy and paste the command below to your terminal: 
+`git clone https://github.com/skDooley/shell_tutorial.git #todo`
+
+
 # Basic essential programs
 The general structure of a command line:
 `program [-flags] argument1 argument2 ...`
@@ -92,6 +96,7 @@ The general structure of a command line:
     ```
     cd /
     pwd
+    ls #check what is in the root directory
     ```
 - A path is either relative or absolute:
     - An absolute path = the root element and the complete directory list. For example, `/home/hhvu/unix_basic` is an absolute path.
@@ -132,8 +137,8 @@ rm testdir
    
 ##### Wild card
 - The `*` character matches against any character.
-- For example, the following command list all the text files in our current directory:
-    `ls *.txt`
+- For example, the following command list all the files in our current directory that contain "md" at the end of the file names:
+    `ls *md`
 
 ##### Tab Completion
 - Navigate to the home directory. Typing out directory names can waste a lot of time. When you start typing out the name of a directory, then hit the tab key, the shell will try to fill in the rest of the directory name. For example, enter:
@@ -142,9 +147,9 @@ rm testdir
     
 - The shell will fill in the rest of the directory name for `unix_basic`. Now enter:
 
-    `ls ~/unix_basic/practice/ex<tab><tab>`
+    `ls ~/unix_basic/practice/Diverse<tab><tab>`
     
-- When you hit the first tab, nothing happens. The reason is that there are multiple directories in the home directory which start with `ex`. Thus, the shell does not know which one to fill in. When you hit tab again, the shell will list the possible choices.
+- When you hit the first tab, nothing happens. The reason is that there are multiple files in the `practice` directory which start with `Diverse`. Thus, the shell does not know which one to fill in. When you hit tab again, the shell will list the possible choices.
 - Tab completion can also fill in the names of programs. For example, enter `e<tab><tab>`. You will see the name of every program that starts with an `e`. One of those is `echo`. If you enter `ec<tab>` you will see that tab completion works.
 
     
@@ -161,33 +166,37 @@ You can still scroll up to see past commands/outputs.
 #### cat
 - `cat` = concatenate.
 - Displays contents of file on screen.
+    - For example:
+
+        `cat ~/unix_basic/lecture/Diverse-test.txt`
+        
     - This will display the entire file at once. So it will look overwhelming if you have a big file!
 - If you put two file names, it will display the first file, followed by the 2nd file.
 
 #### less
 - `less` opens the file, and lets you navigate through it.
 - Use "space" to go forward and hit the "b" key to go backwards.
-- The "g" key goes to the beginning of the file and "G" goes to the end.
+- The "g" key goes to the beginning of the file and "G" (i.e., `shift + G`) goes to the end.
 - Finally, hit "q" to quit.
 
 #### head
 - `head` writes the first ten lines of a file to the screen.
 - To change the number of lines printed, type `head -n <number> <file name>`.
-    - For example, `head -n 5 `
+    - For example, `head -n 5 DiverseCas9s.faa`
 
 #### tail
 - `tail` writes the last ten lines of a file to the screen.
 - To change the number of lines printed, type `tail -n <number> <file name>`.
-    - For example, `tail -n 5 `
+    - For example, `tail -n 5 DiverseCas9s.faa`
     
 #### grep
 - `grep` can search files for specific words or patterns.
 - For example:
-    
+    `grep "locus" DiverseCas9s.faa`
     
 #### sort
 - `sort` provides different options to sort a file.
-- For example, `sort ` will sort the file `` alphabetically based on the first column.
+- For example, `sort DiverseCas9s-names.txt` will sort the file `DiverseCas9s-names.txt` alphabetically based on the first column.
 - If your file has multiple columns, you can use `-k` and the column number to sort by another column than the first (default).
 - For more options in `sort`, type `man sort`.
 
@@ -200,21 +209,21 @@ You can still scroll up to see past commands/outputs.
 - `wc` will print newline, word, and byte counts for each file.
 - Do `man wc` to find out all options in `wc`.
 - For example, if you want to count the number of lines in a file:
-`wc -l `
+`wc -l DiverseCas9s.faa`
 
 #### Redirect data `>`
 - The following command puts the output on the screen.
 
-`grep "" `
+`grep "gbkey=CDS" DiverseCas9s.faa`
 
 - What if you want to store the output to another file?
 
-`grep "" > `
+`grep "locus_tag=STER" DiverseCas9s.faa > Cas9sOutput.txt`
 
 #### Append data `>>`
 - What if you want to add the "" search results to your output file that already exists?
 
-`grep -i 'spinning top' science.txt >> scienceOutput.txt`
+`grep 'protein_id=YP' DiverseCas9s.faa >> Cas9sOutput.txt`
 
 - If you only used the `>` the text that was already in the file would be overwritten.
 
@@ -222,11 +231,9 @@ You can still scroll up to see past commands/outputs.
 - The `|` command (hit `Shift + \`) allows you to connect the output of one command to the next command.
 - Save time and memory when programming!
 - For example:
-- 
+    `grep 'protein_id=YP' DiverseCas9s.faa | wc -l`
+
 # Conclusion
 
 
-Now, copy and paste the command below to your terminal: 
-`git clone https://github.com/skDooley/shell_tutorial.git #todo`
 
-Here, `git` is the program, `clone` and `https://github.com/skDooley/shell_tutorial.git` are arguments.
