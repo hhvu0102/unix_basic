@@ -119,14 +119,14 @@ The general structure of a command line:
 |mv <filename> <destination>| moves a file to a location|
     
 For example:
-    ```
-    mkdir testdir
-    cd testdir
-    touch testfile.txt
-    ls
-    cd ../
-    rm testdir
-    ```
+```
+mkdir testdir
+cd testdir
+touch testfile.txt
+ls
+cd ../
+rm testdir
+```
 
 `rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
 
