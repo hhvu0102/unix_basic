@@ -49,7 +49,7 @@ UNIX is useful...
 
 Now, copy and paste the command below to your terminal: 
 
-    `git clone https://github.com/hhvu0102/unix_basic.git`
+    git clone https://github.com/hhvu0102/unix_basic.git
 
 
 # Basic essential programs
@@ -158,7 +158,7 @@ For example:
 #### clear
 Sometimes your terminal is filled with past commands/outputs, and you want to have a clean terminal to avoid confusion. Then, you can do:
 
-    `clear`
+    clear
 
 or hit `Ctrl + l`.
 
