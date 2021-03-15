@@ -48,12 +48,13 @@ UNIX is useful...
 # Accessing HPC class TODO: request HPC class, screenshots to illustrate
 
 Now, copy and paste the command below to your terminal: 
-`git clone https://github.com/skDooley/shell_tutorial.git #todo`
+
+    `git clone https://github.com/hhvu0102/unix_basic.git #todo`
 
 
 # Basic essential programs
 The general structure of a command line:
-`program [-flags] argument1 argument2 ...`
+    `program [-flags] argument1 argument2 ...`
 
 - For example:
     `echo hello world`
@@ -118,14 +119,14 @@ The general structure of a command line:
 |mv <filename> <destination>| moves a file to a location|
     
 For example:
-```
-mkdir testdir
-cd testdir
-touch testfile.txt
-ls
-cd ../
-rm testdir
-```
+    ```
+    mkdir testdir
+    cd testdir
+    touch testfile.txt
+    ls
+    cd ../
+    rm testdir
+    ```
 
 `rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
 
@@ -157,7 +158,7 @@ rm testdir
 #### clear
 Sometimes your terminal is filled with past commands/outputs, and you want to have a clean terminal to avoid confusion. Then, you can do:
 
-`clear`
+    `clear`
 
 or hit `Ctrl + l`.
 
@@ -209,21 +210,22 @@ You can still scroll up to see past commands/outputs.
 - `wc` will print newline, word, and byte counts for each file.
 - Do `man wc` to find out all options in `wc`.
 - For example, if you want to count the number of lines in a file:
-`wc -l DiverseCas9s.faa`
+
+    `wc -l DiverseCas9s.faa`
 
 #### Redirect data `>`
 - The following command puts the output on the screen.
 
-`grep "gbkey=CDS" DiverseCas9s.faa`
+    `grep "gbkey=CDS" DiverseCas9s.faa`
 
 - What if you want to store the output to another file?
 
-`grep "locus_tag=STER" DiverseCas9s.faa > Cas9sOutput.txt`
+    `grep "locus_tag=STER" DiverseCas9s.faa > Cas9sOutput.txt`
 
 #### Append data `>>`
 - What if you want to add the "" search results to your output file that already exists?
 
-`grep 'protein_id=YP' DiverseCas9s.faa >> Cas9sOutput.txt`
+    `grep 'protein_id=YP' DiverseCas9s.faa >> Cas9sOutput.txt`
 
 - If you only used the `>` the text that was already in the file would be overwritten.
 
