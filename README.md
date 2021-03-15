@@ -49,7 +49,7 @@ UNIX is useful...
 
 Now, copy and paste the command below to your terminal: 
 
-    `git clone https://github.com/hhvu0102/unix_basic.git #todo`
+    `git clone https://github.com/hhvu0102/unix_basic.git`
 
 
 # Basic essential programs
