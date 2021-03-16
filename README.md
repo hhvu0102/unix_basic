@@ -178,7 +178,7 @@ You can still scroll up to see past commands/outputs.
 - `less` opens the file, and lets you navigate through it.
 - Use "space" to go forward and hit the "b" key to go backwards.
 - The "g" key goes to the beginning of the file and "G" (i.e., `shift + G`) goes to the end.
-- Finally, hit "q" to quit.
+- Finally, hit `q` to quit.
 
 #### head
 - `head` writes the first ten lines of a file to the screen.
@@ -194,12 +194,13 @@ You can still scroll up to see past commands/outputs.
 - `grep` can search files for specific words or patterns.
 - For example:
     `grep "locus" DiverseCas9s.faa`
+- To explore other options, `man grep` or `grep -h` or `grep --help`
     
 #### sort
 - `sort` provides different options to sort a file.
 - For example, `sort DiverseCas9s-names.txt` will sort the file `DiverseCas9s-names.txt` alphabetically based on the first column.
 - If your file has multiple columns, you can use `-k` and the column number to sort by another column than the first (default).
-- For more options in `sort`, type `man sort`.
+- For more options in `sort`, type `man sort` or `sort --help` (`-h` may not work in this case).
 
 #### uniq
 - `uniq` can be used to identify lines that occur uniquely in a file (`-u`), lines that are duplicated in a file (`-d`), or to count the number of occurrences in a file (`-c`)
@@ -236,6 +237,8 @@ You can still scroll up to see past commands/outputs.
     `grep 'protein_id=YP' DiverseCas9s.faa | wc -l`
 
 # Conclusion
-
+- The ability to use and navigate with UNIX is essential.
+- Our best friends: Google, `man`, or `<program name> -h`.
+- Now, let's go to the `practice` directory and work on the practice problems with your group!
 
 
