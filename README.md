@@ -106,6 +106,10 @@ The general structure of a command line:
 - The parent directory is denoted by `..`.
     - When we do `cd ..`, this will put us one directory above where we were.
 
+#### Poll time!
+1. There's a directory called `hearingData` under the directory `lecture`. How would do go to the directory?
+2. Which files listed below are in the `hearingData` directory?
+
 
 #### Creation/Destruction
 | Command | Description |
@@ -128,6 +132,8 @@ cd ../
 rm testdir
 ```
 
+You cannot `rm testdir` here. Why?
+
 `rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
 
 #### Shortcuts, wild cards, and tab completion
@@ -140,6 +146,10 @@ rm testdir
 - The `*` character matches against any character.
 - For example, the following command list all the files in our current directory that contain "md" at the end of the file names:
     `ls *md`
+    
+#### Short poll time!
+1. Do this command: `ls ~/unix_basic/lecture/hearingData/*4*2*`. What do you observe from the patterns of the file names?
+
 
 ##### Tab Completion
 - Navigate to the home directory. Typing out directory names can waste a lot of time. When you start typing out the name of a directory, then hit the tab key, the shell will try to fill in the rest of the directory name. For example, enter:
@@ -148,7 +158,7 @@ rm testdir
     
 - The shell will fill in the rest of the directory name for `unix_basic`. Now enter:
 
-    `ls ~/unix_basic/practice/Diverse<tab><tab>`
+    `ls ~/unix_basic/lecture/Diverse<tab><tab>`
     
 - When you hit the first tab, nothing happens. The reason is that there are multiple files in the `practice` directory which start with `Diverse`. Thus, the shell does not know which one to fill in. When you hit tab again, the shell will list the possible choices.
 - Tab completion can also fill in the names of programs. For example, enter `e<tab><tab>`. You will see the name of every program that starts with an `e`. One of those is `echo`. If you enter `ec<tab>` you will see that tab completion works.
@@ -202,6 +212,10 @@ You can still scroll up to see past commands/outputs.
 - If your file has multiple columns, you can use `-k` and the column number to sort by another column than the first (default).
 - For more options in `sort`, type `man sort` or `sort --help` (`-h` may not work in this case).
 
+#### Short poll time!
+1. Read through the `man` page of `sort`. If I want to sort something **numerically**, what `-flag` should I use?
+
+
 #### uniq
 - `uniq` can be used to identify lines that occur uniquely in a file (`-u`), lines that are duplicated in a file (`-d`), or to count the number of occurrences in a file (`-c`)
 - Without any options, it is similar to `sort -u` (which only keeps unique entries).
@@ -214,12 +228,17 @@ You can still scroll up to see past commands/outputs.
     - Print column 1 and 3 from `DiverseCas9s-names.txt`, do `cut -f 1,3 DiverseCas9s-names.txt` (no space between `1,` and `3`).
 - To explore other options, do `cut --help`.
 
+
 #### wc
 - `wc` will print newline, word, and byte counts for each file.
 - Do `man wc` to find out all options in `wc`.
 - For example, if you want to count the number of lines in a file:
 
     `wc -l DiverseCas9s.faa`
+    
+#### Short poll time!
+1. If I want to count the number of words in a file, what `-flag` should I use?
+2. How many words are there in the file `~/unix_basic/lecture/hearingData/Data0526`?
 
 #### Redirect data `>`
 - The following command puts the output on the screen.
