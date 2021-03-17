@@ -3,7 +3,12 @@
 
 In this section, we will be practicing using UNIX commands to explore some real data (well, the data in the lecture section was real too).
 
-The data supplied here, E003-H3K27ac.narrowPeak.gz, is a narrow peak file downloaded from [The Roadmap Epigenomes Project](https://egg2.wustl.edu/roadmap/web_portal/index.html). Briefly, it contains the regions of interest in H1 embryonic stem cells. The file is in a format called `narrowPeak`. The first column of the file is the chromosome (in the form `chr*`), the second column is the start position of the region, and the third column is the stop position of the region. The other columns can be read about [here](http://genome.ucsc.edu/FAQ/FAQformat.html#format12). Also, the general file format is called `bed`, you can read about it on the same website.
+The data supplied here, E003-H3K27ac.narrowPeak.gz, is a narrow peak file downloaded from [The Roadmap Epigenomes Project](https://egg2.wustl.edu/roadmap/web_portal/index.html). Briefly, it contains the regions of interest in H1 embryonic stem cells. The file is in a format called `narrowPeak`.
+- The first column of the file is the chromosome (in the form `chr*`).
+- The second column is the start position of the region.
+- The third column is the stop position of the region.
+- The 9th column: q-value, which are the measurement of statistical significance using false discovery rate (-log10). Use -1 if no qValue is assigned.
+- The other columns can be read about [here](http://genome.ucsc.edu/FAQ/FAQformat.html#format12). Also, the general file format is called `bed`, you can read about it on the same website.
 
 You can see that the data here has a filename extension of `.gz`. It means the data had been compressed. To decompress the file, do the following command:
 ```
@@ -37,7 +42,10 @@ chr7	99006271	99006540	Rank_10	1510	.	36.43667	151.02107	143.87294	121
 5. How many regions of interest are there on `chr1`?
 6. How will you count the number of regions on `chr1` without saving those regions to a file?
 - Hint: Use pipe `|`.
-7. How would you sort the file `answers/chr1.bed` based on the second column in ascending order (from small to large)?
+7. How many unique chromosomes are there in the `E003-H3K27ac.narrowPeak` file?
+- Hint: you can use `cut`, `sort` (with some `-flag`), then count.
+8. How many regions each chromosome has in the file?
+9. How would you sort the file `answers/chr1.bed` based on the second column in ascending order (from small to large)?
 - Hint: If the first few lines of the results after `sort` look like this:
 ```
 chr1	10002662	10003327	Rank_15426	221	.	9.18838	22.17389	19.14895	378
@@ -47,3 +55,4 @@ chr1	100066302	100066419	Rank_136863	36	.	3.20236	3.63083	1.59659	58
 chr1	10010655	10010961	Rank_58658	71	.	4.43577	7.13862	4.78478	121
 ```
 It means you are sorting the second column alphabetically. We do not want to sort alphabetically.
+10. Which region on `chr1`has the highest `-log10(q-value)`?
