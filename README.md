@@ -207,6 +207,13 @@ You can still scroll up to see past commands/outputs.
 - Without any options, it is similar to `sort -u` (which only keeps unique entries).
 - Files must be sorted before running this command.
 
+#### cut
+- `cut` can be used to print only selected columns from a file.
+- Examples:
+    - Print column 1 of `DiverseCas9s-names.txt`, do `cut -f 1 DiverseCas9s-names.txt`.
+    - Print column 1 and 3 from `DiverseCas9s-names.txt`, do `cut -f 1,3 DiverseCas9s-names.txt` (no space between `1,` and `3`).
+- To explore other options, do `cut --help`.
+
 #### wc
 - `wc` will print newline, word, and byte counts for each file.
 - Do `man wc` to find out all options in `wc`.
