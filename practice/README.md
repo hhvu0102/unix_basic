@@ -35,7 +35,9 @@ chr7	99006271	99006540	Rank_10	1510	.	36.43667	151.02107	143.87294	121
 - Make sure you get only `chr1`, not `chr11`, `chr12`, etc.
 - Hint: look at the manual page `man grep`. What option should you use?
 5. How many regions of interest are there on `chr1`?
-6. How would you sort the file `answers/chr1.bed` based on the second column in ascending order (from small to large)?
+6. How will you count the number of regions on `chr1` without saving those regions to a file?
+- Hint: Use pipe `|`.
+7. How would you sort the file `answers/chr1.bed` based on the second column in ascending order (from small to large)?
 - Hint: If the first few lines of the results after `sort` look like this:
 ```
 chr1	10002662	10003327	Rank_15426	221	.	9.18838	22.17389	19.14895	378
