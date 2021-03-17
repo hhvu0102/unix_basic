@@ -42,8 +42,10 @@ chr7	99006271	99006540	Rank_10	1510	.	36.43667	151.02107	143.87294	121
 5. How many regions of interest are there on `chr1`?
 6. How will you count the number of regions on `chr1` without saving those regions to a file?
 - Hint: Use pipe `|`.
+
 7. How many unique chromosomes are there in the `E003-H3K27ac.narrowPeak` file?
 - Hint: you can use `cut`, `sort` (with some `-flag`), then count.
+
 8. How many regions each chromosome has in the file?
 9. How would you sort the file `answers/chr1.bed` based on the second column in ascending order (from small to large)?
 - Hint: If the first few lines of the results after `sort` look like this:
@@ -55,4 +57,5 @@ chr1	100066302	100066419	Rank_136863	36	.	3.20236	3.63083	1.59659	58
 chr1	10010655	10010961	Rank_58658	71	.	4.43577	7.13862	4.78478	121
 ```
 It means you are sorting the second column alphabetically. We do not want to sort alphabetically.
+
 10. Which region on `chr1`has the highest `-log10(q-value)`?
