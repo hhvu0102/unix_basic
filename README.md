@@ -224,7 +224,7 @@ You can still scroll up to see past commands/outputs.
     `grep "locus_tag=STER" DiverseCas9s.faa > Cas9sOutput.txt`
 
 #### Append data `>>`
-- What if you want to add the "" search results to your output file that already exists?
+- What if you want to add the search results to your output file that already exists?
 
     `grep 'protein_id=YP' DiverseCas9s.faa >> Cas9sOutput.txt`
 
