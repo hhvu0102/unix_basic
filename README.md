@@ -12,6 +12,8 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 4. Conclusion
 
 # Some installations
+Make sure you have access to either Putty, Windows Powershell, or Terminal. If you don't, tell us!
+
 # Introduction to UNIX
 ### What is UNIX?
 - A common operating system.
@@ -45,7 +47,17 @@ UNIX is useful...
 - when you need to run a program that is not available on Galaxy, and can only run in a UNIX-based environment.
 - when you want to automate repetitive tasks.
 
-# Accessing HPC class TODO: request HPC class, screenshots to illustrate
+# Accessing HPC class and some notes
+Now we will connect to the HPC class for today's tuorial.
+If you are on Putty, put the information as in the picture here:
+<img src="/images/hpc-class.PNG" width="400" height="500"/>
+
+If you are on MACS Terminal, or Windows Powershell, do this:
+```
+ssh <your-net-id>@hpc-class.its.iastate.edu
+```
+
+Then put in your Net ID password. However, the terminal won't show any character when you type in.
 
 Now, copy and paste the command below to your terminal: 
 
