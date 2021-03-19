@@ -48,9 +48,9 @@ UNIX is useful...
 - when you want to automate repetitive tasks.
 
 # Accessing HPC class and some notes
-Now we will connect to the HPC class for today's tuorial.
+Now we will connect to the HPC class for today's tutorial.
 If you are on Putty, put the information as in the picture here:
-<img src="/images/hpc-class.PNG" width="400" height="500"/>
+<img src="/images/hpc-class.PNG"/>
 
 If you are on MACS Terminal, or Windows Powershell, do this:
 ```
@@ -58,6 +58,10 @@ ssh <your-net-id>@hpc-class.its.iastate.edu
 ```
 
 Then put in your Net ID password. However, the terminal won't show any character when you type in.
+
+In today's session, BCB volunteers' most important goal is to provide help when you need some! In some cases, we may set up a break out room so that volunteers can give you more hands-on instructions. If you are asked to join a break out session, please click "Join". See the picture below.
+
+<img src="/images/image.png"/>
 
 Now, copy and paste the command below to your terminal: 
 
@@ -121,6 +125,8 @@ The general structure of a command line:
 #### Poll time!
 1. There's a directory called `hearingData` under the directory `lecture`. How would do go to the directory?
 2. Which files listed below are in the `hearingData` directory?
+A. Data0355, Data0493, Data0235
+B. Data0335, Data0492, Data0225
 
 
 #### Creation/Destruction
@@ -226,6 +232,10 @@ You can still scroll up to see past commands/outputs.
 
 #### Short poll time!
 1. Read through the `man` page of `sort`. If I want to sort something **numerically**, what `-flag` should I use?
+A. `-b`
+B. `-i`
+C. `-r`
+D. `-n`
 
 
 #### uniq
