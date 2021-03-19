@@ -152,7 +152,7 @@ rm testdir
 
 You cannot `rm testdir` here. Why?
 
-`rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
+## `rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
 
 #### Shortcuts, wild cards, and tab completion
 ##### Tilde ~
