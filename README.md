@@ -66,7 +66,7 @@ Then put in your Net ID password. However, the terminal won't show any character
 
 Now, copy and paste the command below to your terminal: 
 
-    git clone https://github.com/hhvu0102/unix_basic/Gen349.git
+    git clone --single-branch --branch Gen349 https://github.com/hhvu0102/unix_basic.git
 
 ### How to paste:
 - If you are in MACS terminal: `Command + V`
@@ -334,21 +334,29 @@ For example, `bedtools intersect -a file1.bed -b file2.bed`
 
 What are A file and B file in this case?
 
+<img src="/images/bedtools-default.PNG" />
 
 
 #### -wa Reporting the original A feature
 Instead, one can force bedtools intersect to report the original “A” feature when an overlap is found. As shown below, the entire “A” feature is reported, not just the portion that overlaps with the “B” feature.
 
+<img src="/images/bedtools-wa.PNG" />
 
 #### -wb Reporting the original B feature
 Similarly, one can force bedtools intersect to report the original “B” feature when an overlap is found. If just -wb is used, the overlapping portion of A will be reported followed by the original “B”. 
+
+<img src="/images/bedtools-wb.PNG" />
 
 #### Both -wa and -wb
 If both `-wa` and `-wb` are used, the originals of both “A” and “B” will be reported.
 
 #### -v
 Only report those entries in A that have no overlap in B.
+```
+bedtools intersect -v -a file1.bed -b file2.bed
+```
 
 #### -u
 Write original A entry once if any overlaps found in B. In other words, just report the fact at least one overlap was found in B.
 
+Try `bedtools intersect -wa -a file2.bed -b file1.bed` and `bedtools intersect -u -a file2.bed -b file1.bed`. What's the difference?
