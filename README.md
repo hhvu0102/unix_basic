@@ -1,4 +1,4 @@
-## Bioinformatics and Computational Biology Programming Workshop 2021
+## Gen 349 - Week 12 - Programming for Biologists
 # Basic UNIX Totorial
 
 **Original material by [Shane Dooley](https://github.com/skDooley/shell_tutorial) and Dr. Geetu Tuteja.
@@ -12,7 +12,8 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 4. Conclusion
 
 # Some installations
-Make sure you have access to either Putty, Windows Powershell, or Terminal. If you don't, tell us!
+## Connect to VPN
+## Make sure you have access to either Putty, Windows Powershell, or Terminal. If you don't, tell us!
 
 # Introduction to UNIX
 ### What is UNIX?
@@ -50,7 +51,7 @@ UNIX is useful...
 # Accessing HPC class and some notes
 Now we will connect to the HPC class for today's tutorial.
 If you are on Putty, put the information as in the picture here:
-<img src="/images/hpc-class.PNG"/>
+<img src="/images/hpc-class.PNG" width="330" height="350" />
 
 If you are on MACS Terminal, or Windows Powershell, do this:
 ```
@@ -59,14 +60,17 @@ ssh <your-net-id>@hpc-class.its.iastate.edu
 
 Then put in your Net ID password. However, the terminal won't show any character when you type in.
 
-In today's session, BCB volunteers' most important goal is to provide help when you need some! In some cases, we may set up a break out room so that volunteers can give you more hands-on instructions. If you are asked to join a break out session, please click "Join". See the picture below.
-
-<img src="/images/image.png"/>
+## If you have questions:
+- Put them in the chat.
+- Or note them down and ask us at the end of the lecture.
 
 Now, copy and paste the command below to your terminal: 
 
-    git clone https://github.com/hhvu0102/unix_basic.git
+    git clone https://github.com/hhvu0102/unix_basic/Gen349.git
 
+### How to paste:
+- If you are in MACS terminal: `Command + V`
+- If you are in Putty: `Right click`
 
 # Basic essential programs
 The general structure of a command line:
@@ -125,8 +129,8 @@ The general structure of a command line:
 #### Poll time!
 1. There's a directory called `hearingData` under the directory `lecture`. How would do go to the directory?
 2. Which files listed below are in the `hearingData` directory?
-A. Data0355, Data0493, Data0235
-B. Data0335, Data0492, Data0225
+<p> A. Data0355, Data0493, Data0235 </p>
+<p> B. Data0335, Data0492, Data0225 </p>
 
 
 #### Creation/Destruction
