@@ -323,8 +323,32 @@ Let us know when you are able to finish `module load bedtools2`.
 bedtools intersect [OPTIONS] -a <FILE> \
                              -b <FILE1, FILE2, ..., FILEN>
 ```
+- If I want to explore `[OPTIONS]` of `bedtools intersect`, what `flag` should I use?
+- For whatever file we put right after the flag `-a`, that file is called the A file in this tutorial.
+- For whatever file we put right after the flag `-b`, that file is called the B file in this tutorial.
+
+#### Default behavior:
+By default, if an overlap is found, bedtools intersect reports the shared interval between the two overlapping features.
+
+For example, `bedtools intersect -a file1.bed -b file2.bed`
+
+What are A file and B file in this case?
 
 
 
+#### -wa Reporting the original A feature
+Instead, one can force bedtools intersect to report the original “A” feature when an overlap is found. As shown below, the entire “A” feature is reported, not just the portion that overlaps with the “B” feature.
 
+
+#### -wb Reporting the original B feature
+Similarly, one can force bedtools intersect to report the original “B” feature when an overlap is found. If just -wb is used, the overlapping portion of A will be reported followed by the original “B”. 
+
+#### Both -wa and -wb
+If both `-wa` and `-wb` are used, the originals of both “A” and “B” will be reported.
+
+#### -v
+Only report those entries in A that have no overlap in B.
+
+#### -u
+Write original A entry once if any overlaps found in B. In other words, just report the fact at least one overlap was found in B.
 
