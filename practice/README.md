@@ -1,5 +1,5 @@
-## Bioinformatics and Computational Biology Programming Workshop 2021
-# Basic UNIX Totorial - Practice Exercise
+## Gen349 Week 12 - Programming for Biologists
+# Basic UNIX Totorial - Practice Exercises (WILL NOT BE GRADED)
 
 In this section, we will be practicing using UNIX commands to explore some real data (well, the data in the lecture section was real too).
 
@@ -39,7 +39,7 @@ chr7	99006271	99006540	Rank_10	1510	.	36.43667	151.02107	143.87294	121
 4. Get all the regions on `chr1`, put the redults in a file named `chr1.bed` and put the file in the directory `answers`.
 - Make sure you get only `chr1`, not `chr11`, `chr12`, etc.
 - Hint: look at the manual page `man grep`. What option should you use?
-5. How many regions of interest are there on `chr1`?
+5. How many regions are there on `chr1` that are presented in the file??
 6. How will you count the number of regions on `chr1` without saving those regions to a file?
 - Hint: Use pipe `|`.
 
