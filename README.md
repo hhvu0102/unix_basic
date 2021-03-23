@@ -28,6 +28,7 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 <img src="/images/SHELL.png" width="500" height="400"/>
 
 ### UNIX based operating systems
+
 #### Linux
 - Operating system and bundled application programs.
 - Derived from Unix.
@@ -170,7 +171,7 @@ You cannot `rm testdir` here. Why?
     `ls *md`
     
 #### Short poll time!
-1. Do this command: `ls ~/unix_basic/Gen349/lecture/hearingData/*4*2*`. What do you observe from the patterns of the file names?
+1. Do this command: `ls ~/unix_basic/lecture/hearingData/*4*2*`. What do you observe from the patterns of the file names?
 
 
 ##### Tab Completion
@@ -180,7 +181,7 @@ You cannot `rm testdir` here. Why?
     
 - The shell will fill in the rest of the directory name for `unix_basic`. Now enter:
 
-    `ls ~/unix_basic/Gen349/lecture/Diverse<tab><tab>`
+    `ls ~/unix_basic/lecture/Diverse<tab><tab>`
     
 - When you hit the first tab, nothing happens. The reason is that there are multiple files in the `practice` directory which start with `Diverse`. Thus, the shell does not know which one to fill in. When you hit tab again, the shell will list the possible choices.
 - Tab completion can also fill in the names of programs. For example, enter `e<tab><tab>`. You will see the name of every program that starts with an `e`. One of those is `echo`. If you enter `ec<tab>` you will see that tab completion works.
