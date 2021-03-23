@@ -109,7 +109,7 @@ The general structure of a command line:
 - Helps you navigate between different directories.
 
 #### Root vs home; Relative vs. absolute path
-- Root = the first or top-most directory in a hierarchy.
+- Root = the first or top-most directory in a hierarchy. Sometimes you won't have full access in `root`, e.g., when you are on university's high performance clusters.
 - `home` directory is under the root.
 - Where you are in the directory tree is called your path.
 - In a path name, different directories and file names are separated by a slash `/`. The root has no name, so it's only one slash `/`.
@@ -129,8 +129,8 @@ The general structure of a command line:
 #### Poll time!
 1. There's a directory called `hearingData` under the directory `lecture`. How would do go to the directory?
 2. Which files listed below are in the `hearingData` directory?
-<p> A. Data0355, Data0493, Data0235 </p>
-<p> B. Data0335, Data0492, Data0225 </p>
+    <p> A. Data0355, Data0493, Data0235 </p>
+    <p> B. Data0335, Data0492, Data0225 </p>
 
 
 #### Creation/Destruction
@@ -170,7 +170,7 @@ You cannot `rm testdir` here. Why?
     `ls *md`
     
 #### Short poll time!
-1. Do this command: `ls ~/unix_basic/lecture/hearingData/*4*2*`. What do you observe from the patterns of the file names?
+1. Do this command: `ls ~/unix_basic/Gen349/lecture/hearingData/*4*2*`. What do you observe from the patterns of the file names?
 
 
 ##### Tab Completion
@@ -180,7 +180,7 @@ You cannot `rm testdir` here. Why?
     
 - The shell will fill in the rest of the directory name for `unix_basic`. Now enter:
 
-    `ls ~/unix_basic/lecture/Diverse<tab><tab>`
+    `ls ~/unix_basic/Gen349/lecture/Diverse<tab><tab>`
     
 - When you hit the first tab, nothing happens. The reason is that there are multiple files in the `practice` directory which start with `Diverse`. Thus, the shell does not know which one to fill in. When you hit tab again, the shell will list the possible choices.
 - Tab completion can also fill in the names of programs. For example, enter `e<tab><tab>`. You will see the name of every program that starts with an `e`. One of those is `echo`. If you enter `ec<tab>` you will see that tab completion works.
@@ -196,12 +196,16 @@ or hit `Ctrl + l`.
 
 You can still scroll up to see past commands/outputs.
 
+#### Quick check:
+If I want to go to the directory `lecture` but I don't know where I am now, what should I do?
+Let's go to the directory `lecture`!
+
 #### cat
 - `cat` = concatenate.
 - Displays contents of file on screen.
     - For example:
 
-        `cat ~/unix_basic/lecture/Diverse-test.txt`
+        `cat ~/unix_basic/Gen349/lecture/Diverse-test.txt`
         
     - This will display the entire file at once. So it will look overwhelming if you have a big file!
 - If you put two file names, it will display the first file, followed by the 2nd file.
@@ -215,7 +219,8 @@ You can still scroll up to see past commands/outputs.
 #### head
 - `head` writes the first ten lines of a file to the screen.
 - To change the number of lines printed, type `head -n <number> <file name>`.
-    - For example, `head -n 5 DiverseCas9s.faa`
+- Quick question, where is the file `DiverseCas9s.faa`?
+- Let's try: `head -n 5 DiverseCas9s.faa`
 
 #### tail
 - `tail` writes the last ten lines of a file to the screen.
@@ -236,10 +241,10 @@ You can still scroll up to see past commands/outputs.
 
 #### Short poll time!
 1. Read through the `man` page of `sort`. If I want to sort something **numerically**, what `-flag` should I use?
-A. `-b`
-B. `-i`
-C. `-r`
-D. `-n`
+    A. `-b`
+    B. `-i`
+    C. `-r`
+    D. `-n`
 
 
 #### uniq
@@ -290,7 +295,36 @@ D. `-n`
 
 # Conclusion
 - The ability to use and navigate with UNIX is essential.
-- Our best friends: Google, `man`, or `<program name> -h`.
-- Now, let's go to the `practice` directory and work on the practice problems with your group!
+- Our best friends: Google, `man`, or `<program name> --help`.
+
+### Let's take 5-min break, and we will come back with the last section. Ask us questions if you have any!
+
+# BEDtools
+
+BEDtools is a software package that allows easy comparison of genomic data
+- Tasks that can be carried out with BEDtools are very common in genomic analysis
+- BEDtools is also available on Galaxy 
+- You may find yourself in a situation where it is
+easier to run BEDtools locally on your computer
+- Can integrate with other UNIX utilities (like sort, awk, etc)
+- Don’t need to upload, run and download from Galaxy
+- May not need the computational power of the Galaxy server for basic (but common) analysis
+
+### BEDTools documentation
+[http://bedtools.readthedocs.io/en/latest/index.html](http://bedtools.readthedocs.io/en/latest/index.html)
+
+### bedtools intersect
+- First, do `module load bedtools2` (this command evokes the program `bedtools2` that has been installed on our cluster. Not all programs are pre-installed like this, but most of the popular ones are).
+Let us know when you are able to finish `module load bedtools2`.
+
+- `bedtools intersect` allows one to screen for overlaps between two sets of genomic features.
+- Usage:
+```
+bedtools intersect [OPTIONS] -a <FILE> \
+                             -b <FILE1, FILE2, ..., FILEN>
+```
+
+
+
 
 
