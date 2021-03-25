@@ -69,9 +69,13 @@ Now, copy and paste the command below to your terminal:
 
     git clone --single-branch --branch Gen349 https://github.com/hhvu0102/unix_basic.git
 
-### How to paste:
+### How to paste to terminal:
 - If you are in MACS terminal: `Command + V`
 - If you are in Putty: `Right click`
+
+### How to copy from terminal to other program:
+- If you are in MACS terminal: #todo
+- If you are in Putty: highlight the phrase to copy.
 
 # Basic essential programs
 The general structure of a command line:
