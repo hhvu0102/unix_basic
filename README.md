@@ -11,6 +11,16 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 3. Examining files on the command line
 4. Conclusion
 
+
+
+
+Root vs home; Relative vs. absolute path
+Show figure to help explain this section?
+Before the first poll - I don't think you had them move into the unix_basic directory yet? You should have them change directories, and look at what is there (even if you are going to tell them, you should write it in case someone is not in class)
+For the first poll, can you make one of the choices obviously wrong (e.g. Data1258), so that they will be able to answer faster, and it will still demonstrate they know what they are doing.
+When looking at man or help pages, will they know how to get to next page? For cat section, will they know how to exit out of the file view here or when on a help page?
+For last exercise in bedtools, make sure they are in the lecture directory?
+    
 # Some installations
 ## Connect to VPN
 ## Make sure you have access to either Putty, Windows Powershell, or Terminal. If you don't, tell us!
@@ -52,18 +62,23 @@ UNIX is useful...
 # Accessing HPC class and some notes
 Now we will connect to the HPC class for today's tutorial.
 If you are on Putty, put the information as in the picture here:
+
 <img src="/images/hpc-class.PNG" width="330" height="350" />
+
+Replace `hhvu` with your own NetID.
 
 If you are on MACS Terminal, or Windows Powershell, do this:
 ```
 ssh <your-net-id>@hpc-class.its.iastate.edu
 ```
 
-Then put in your Net ID password. However, the terminal won't show any character when you type in.
+For example: `ssh hhvu@hpc-class.its.iastate.edu` (replace `hhvu` with your own NetID).
+
+Then put in your Net ID password. Note that no characters will show in the terminal while you are typing your password.
 
 ## If you have questions:
-- Put them in the chat.
-- Or note them down and ask us at the end of the lecture.
+- Tell us if you need us to slow down.
+- If you move faster than us, wait to ask your question until we get to the part you are on.
 
 Now, copy and paste the command below to your terminal: 
 
@@ -74,7 +89,7 @@ Now, copy and paste the command below to your terminal:
 - If you are in Putty: `Right click`
 
 ### How to copy from terminal to other program:
-- If you are in MACS terminal: #todo
+- If you are in MACS terminal: highlight the text and then hit `Command + C`.
 - If you are in Putty: highlight the phrase to copy.
 
 # Basic essential programs
@@ -116,6 +131,10 @@ The general structure of a command line:
 #### Root vs home; Relative vs. absolute path
 - Root = the first or top-most directory in a hierarchy. Sometimes you won't have full access in `root`, e.g., when you are on university's high performance clusters.
 - `home` directory is under the root.
+
+<img src="/images/absolutePathNames.jpg"/>
+Adapted from [GeeksForGeeks](https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/)
+
 - Where you are in the directory tree is called your path.
 - In a path name, different directories and file names are separated by a slash `/`. The root has no name, so it's only one slash `/`.
     - For example:
