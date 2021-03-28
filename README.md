@@ -12,14 +12,6 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 4. Conclusion
 
 
-
-
-Root vs home; Relative vs. absolute path
-Show figure to help explain this section?
-Before the first poll - I don't think you had them move into the unix_basic directory yet? You should have them change directories, and look at what is there (even if you are going to tell them, you should write it in case someone is not in class)
-For the first poll, can you make one of the choices obviously wrong (e.g. Data1258), so that they will be able to answer faster, and it will still demonstrate they know what they are doing.
-When looking at man or help pages, will they know how to get to next page? For cat section, will they know how to exit out of the file view here or when on a help page?
-For last exercise in bedtools, make sure they are in the lecture directory?
     
 # Some installations
 ## Connect to VPN
@@ -118,15 +110,23 @@ The general structure of a command line:
 - Tells you where you are sitting in the directory tree.
 - Whenever you start up a terminal, you will start in a special directory called the `home` directory. Every user has their own home directory where they have full access to do whatever they want.
 
+
 #### ls
 - `ls` = list the files in the current directory.
 - Another option: add flags to `ls`.
     - For example: `ls -l` 
 - To explore all options to run `ls`, type `man ls`.
+- Within the `man` page, use arrow keys to move up/down/left/right. To quit the `man` page, hit `q`.
 
 #### cd
 - `cd` = change directory.
 - Helps you navigate between different directories.
+
+Now, let's navigate to the directory `lecture`: `cd /home/hhvu/unix_basic/lecture/` (replace `hhvu` with your NetID).
+
+Recheck where you are: `pwd`
+
+Check what is in the directory: `ls`
 
 #### Root vs home; Relative vs. absolute path
 - Root = the first or top-most directory in a hierarchy. Sometimes you won't have full access in `root`, e.g., when you are on university's high performance clusters.
@@ -153,7 +153,7 @@ Adapted from [GeeksForGeeks](https://www.geeksforgeeks.org/absolute-relative-pat
 #### Poll time!
 1. There's a directory called `hearingData` under the directory `lecture`. How would do go to the directory?
 2. Which files listed below are in the `hearingData` directory?
-    <p> A. Data0355, Data0493, Data0235 </p>
+    <p> A. Data8355, Data7493, Data1235 </p>
     <p> B. Data0335, Data0492, Data0225 </p>
 
 
@@ -229,7 +229,7 @@ Let's go to the directory `lecture`!
 - Displays contents of file on screen.
     - For example:
 
-        `cat ~/unix_basic/Gen349/lecture/Diverse-test.txt`
+        `cat ~/unix_basic/lecture/Diverse-test.txt`
         
     - This will display the entire file at once. So it will look overwhelming if you have a big file!
 - If you put two file names, it will display the first file, followed by the 2nd file.
@@ -261,7 +261,7 @@ Let's go to the directory `lecture`!
 - `sort` provides different options to sort a file.
 - For example, `sort DiverseCas9s-names.txt` will sort the file `DiverseCas9s-names.txt` alphabetically based on the first column.
 - If your file has multiple columns, you can use `-k` and the column number to sort by another column than the first (default).
-- For more options in `sort`, type `man sort` or `sort --help` (`-h` may not work in this case).
+- For more options in `sort`, type `man sort` or `sort --help` (`-h` may not work in this case). Reminder: to exit the `man` page when doing `man sort`, hit `q`.
 
 #### Short poll time!
 1. Read through the `man` page of `sort`. If I want to sort something **numerically**, what `-flag` should I use?
@@ -340,6 +340,7 @@ easier to run BEDtools locally on your computer
 ### bedtools intersect
 - First, do `module load bedtools2` (this command evokes the program `bedtools2` that has been installed on our cluster. Not all programs are pre-installed like this, but most of the popular ones are).
 Let us know when you are able to finish `module load bedtools2`.
+- Make sure you are in the directory `lecture`. Check where you are by doing `pwd`. If you are not in `lecture`, do `cd /home/<your netid>/unix_basic/lecture`.
 
 - `bedtools intersect` allows one to screen for overlaps between two sets of genomic features.
 - Usage:
