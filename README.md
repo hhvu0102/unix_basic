@@ -133,7 +133,7 @@ Check what is in the directory: `ls`
 - `home` directory is under the root.
 
 <img src="/images/absolutePathNames.jpg"/>
-Adapted from [GeeksForGeeks](https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/)
+Adapted from (GeeksForGeeks)[https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/]
 
 - Where you are in the directory tree is called your path.
 - In a path name, different directories and file names are separated by a slash `/`. The root has no name, so it's only one slash `/`.
