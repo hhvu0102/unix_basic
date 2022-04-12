@@ -324,7 +324,7 @@ Let's go to the directory `lecture`!
 - The ability to use and navigate with UNIX is essential.
 - Our best friends: Google, `man`, or `<program name> --help`.
 
-### Let's take 5-min break, and we will come back with the last section. Ask us questions if you have any!
+### Week 15 - BEDtools
 
 # BEDtools
 
