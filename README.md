@@ -1,4 +1,4 @@
-## Gen 349 - Week 12 - Programming for Biologists
+## Gen 349 - Week 14 - Programming for Biologists
 # Basic UNIX Totorial
 
 **Original material by [Shane Dooley](https://github.com/skDooley/shell_tutorial) and Dr. Geetu Tuteja.
@@ -61,7 +61,7 @@ Replace `hhvu` with your own NetID.
 
 If you are on MACS Terminal, or Windows Powershell, do this:
 ```
-ssh <your-net-id>@hpc-class.its.iastate.edu
+ssh your-net-id@hpc-class.its.iastate.edu
 ```
 
 For example: `ssh hhvu@hpc-class.its.iastate.edu` (replace `hhvu` with your own NetID).
