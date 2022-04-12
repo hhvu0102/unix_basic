@@ -144,13 +144,16 @@ Adapted from https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/
     ls #check what is in the root directory
     ```
 - A path is either relative or absolute:
-    - An absolute path = the root element and the complete directory list. For example, `/home/hhvu/unix_basic` is an absolute path.
+    - An absolute path = the root element and the complete directory list. For example, `/home/hhvu/unix_basic` is an absolute path. An absolute path always starts with `/`.
     - A relative path needs to be combined with another path in order to access a file. For example, `unix_basic/lecture` is a relative path.
+
+<img src="/images/pathExample.png"/>
+
 - The current directory is denoted by `.`.
 - The parent directory is denoted by `..`.
     - When we do `cd ..`, this will put us one directory above where we were.
 
-#### Poll time!
+#### Question time!
 1. There's a directory called `hearingData` under the directory `lecture`. How would do go to the directory?
 2. Which files listed below are in the `hearingData` directory?
     <p> A. Data8355, Data7493, Data1235 </p>
@@ -193,7 +196,7 @@ You cannot `rm testdir` here. Why?
 - For example, the following command list all the files in our current directory that contain "md" at the end of the file names:
     `ls *md`
     
-#### Short poll time!
+#### Short question time!
 1. Do this command: `ls ~/unix_basic/lecture/hearingData/*4*2*`. What do you observe from the patterns of the file names?
 
 
@@ -263,7 +266,7 @@ Let's go to the directory `lecture`!
 - If your file has multiple columns, you can use `-k` and the column number to sort by another column than the first (default).
 - For more options in `sort`, type `man sort` or `sort --help` (`-h` may not work in this case). Reminder: to exit the `man` page when doing `man sort`, hit `q`.
 
-#### Short poll time!
+#### Short question time!
 1. Read through the `man` page of `sort`. If I want to sort something **numerically**, what `-flag` should I use?
     A. `-b`
     B. `-i`
@@ -291,7 +294,7 @@ Let's go to the directory `lecture`!
 
     `wc -l DiverseCas9s.faa`
     
-#### Short poll time!
+#### Short question time!
 1. If I want to count the number of words in a file, what `-flag` should I use?
 2. How many words are there in the file `~/unix_basic/lecture/hearingData/Data0526`?
 
