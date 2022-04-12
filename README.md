@@ -147,7 +147,7 @@ Adapted from https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/
     - An absolute path = the root element and the complete directory list. For example, `/home/hhvu/unix_basic` is an absolute path. An absolute path always starts with `/`.
     - A relative path needs to be combined with another path in order to access a file. For example, `unix_basic/lecture` is a relative path.
 
-<img src="/images/pathExample.png"/>
+<img src="/images/pathExample.png" width="500" height="400"/>
 
 - The current directory is denoted by `.`.
 - The parent directory is denoted by `..`.
