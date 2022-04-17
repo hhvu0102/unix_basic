@@ -17,6 +17,12 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 ## Connect to VPN
 ## Make sure you have access to either Putty, Windows Powershell, or Terminal. If you don't, tell us!
 
+# Before we begin
+Please take notes of the commands! Suggested format:
+| Command | What it does | Example |
+|:-:|:-:|:-:|
+|  Command | What it does |  |
+
 # Introduction to UNIX
 ### What is UNIX?
 - A common operating system.
@@ -77,14 +83,14 @@ Now, copy and paste the command below to your terminal:
     git clone --single-branch --branch Gen349 https://github.com/hhvu0102/unix_basic.git
 
 ### How to paste to terminal:
-- If you are in MACS terminal: `Command + V`
+- If you are in Mac terminal: `Command + V`
 - If you are in Putty: `Right click`
 
 ### How to copy from terminal to other program:
-- If you are in MACS terminal: highlight the text and then hit `Command + C`.
+- If you are in Mac terminal: highlight the text and then hit `Command + C`.
 - If you are in Putty: highlight the phrase to copy.
 
-# Basic essential programs
+# Basic essential programming functions
 The general structure of a command line:
     `program [-flags] argument1 argument2 ...`
 
@@ -152,9 +158,10 @@ Adapted from https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/
 - The current directory is denoted by `.`.
 - The parent directory is denoted by `..`.
     - When we do `cd ..`, this will put us one directory above where we were.
+    - When we do `cd`, this will put us back to the `home` directory.
 
 #### Question time!
-1. There's a directory called `hearingData` under the directory `lecture`. How would do go to the directory?
+1. There's a directory called `hearingData` under the directory `lecture`. How would you go to the directory if you are currently in `unix_basic` directory? How would do go regardless of your current location?
 2. Which files listed below are in the `hearingData` directory?
     <p> A. Data8355, Data7493, Data1235 </p>
     <p> B. Data0335, Data0492, Data0225 </p>
