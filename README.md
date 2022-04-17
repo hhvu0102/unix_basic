@@ -202,6 +202,7 @@ You cannot `rm testdir` here. Why?
 - The `*` character matches against any character.
 - For example, the following command list all the files in our current directory that contain "md" at the end of the file names:
     `ls *md`
+- If there is no file with the name pattern `*md` in the directory, it will throw an error `ls: cannot access *md: No such file or directory`.
     
 #### Short question time!
 1. Do this command: `ls ~/unix_basic/lecture/hearingData/*4*2*`. What do you observe from the patterns of the file names?
@@ -216,8 +217,9 @@ You cannot `rm testdir` here. Why?
 
     `ls ~/unix_basic/lecture/Diverse<tab><tab>`
     
-- When you hit the first tab, nothing happens. The reason is that there are multiple files in the `practice` directory which start with `Diverse`. Thus, the shell does not know which one to fill in. When you hit tab again, the shell will list the possible choices.
-- Tab completion can also fill in the names of programs. For example, enter `e<tab><tab>`. You will see the name of every program that starts with an `e`. One of those is `echo`. If you enter `ec<tab>` you will see that tab completion works.
+- When you hit the first tab, nothing happens. The reason is that there are multiple files in the `lecture` directory which start with `Diverse`. Thus, the shell does not know which one to fill in. When you hit tab again, the shell will list the possible choices.
+- Tab completion can also fill in the names of programs. For example, enter `e<tab><tab>`. You will see the name of every program that starts with an `e`. One of those is `echo`. To quit out of the program list, hit `q`.
+- If you enter `ec<tab>` you will see that tab completion works immediately, because there is only one program name starting with `ec`.
 
     
 # Examining files on the command line
