@@ -366,6 +366,7 @@ bedtools intersect [OPTIONS] -a <FILE> \
 - When we want to explore `[OPTIONS]` of `bedtools intersect`, use the `flag` `-h`.
 - For whatever file we put right after the flag `-a`, that file is called the A file in this tutorial.
 - For whatever file we put right after the flag `-b`, that file is called the B file in this tutorial.
+- For all the image examples, the red boxes mark the resulting intervals of the commands.
 
 #### Default behavior:
 By default, if an overlap is found, `bedtools intersect` reports the shared interval between the two overlapping regions.
