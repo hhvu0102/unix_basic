@@ -15,7 +15,7 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
     
 ## Some installations
 ### Connect to VPN
-**Make sure you have access to either Putty, Windows Powershell, or Terminal. If you don't, tell us!**
+**Make sure you have access to either Putty, or Terminal. If you don't, tell us!**
 
 
 ## Before we begin
