@@ -1,10 +1,10 @@
-## Gen 349 - Week 14 - Programming for Biologists
+# Gen 349 - Week 14 - Programming for Biologists
 # Basic UNIX Totorial
 
 **Original material by [Shane Dooley](https://github.com/skDooley/shell_tutorial) and Dr. Geetu Tuteja.
 Modified and compiled by Ha Vu (Tuteja Lab).**
 
-### Outline
+## Outline
 0. Some installations
 1. Introduction to UNIX
 2. Basic essential programs
@@ -13,17 +13,18 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 
 
     
-# Some installations
-## Connect to VPN
-## Make sure you have access to either Putty, Windows Powershell, or Terminal. If you don't, tell us!
+## Some installations
+### Connect to VPN
+**Make sure you have access to either Putty, Windows Powershell, or Terminal. If you don't, tell us!**
 
-# Before we begin
-Please take notes of the commands! Suggested format:
+
+## Before we begin
+**Please take notes of the commands!** Suggested format:
 | Command | What it does | Example |
 |:-:|:-:|:-:|
 |  Command | What it does |  |
 
-# Introduction to UNIX
+## Introduction to UNIX
 ### What is UNIX?
 - A common operating system.
 - What is an operating system?
@@ -57,7 +58,7 @@ UNIX is useful...
 - when you need to run a program that is not available on Galaxy, and can only run in a UNIX-based environment.
 - when you want to automate repetitive tasks.
 
-# Accessing HPC class and some notes
+## Accessing HPC class and some notes
 Now we will connect to the HPC class for today's tutorial.
 If you are on Putty, put the information as in the picture here:
 
@@ -74,7 +75,7 @@ For example: `ssh hhvu@hpc-class.its.iastate.edu` (replace `hhvu` with your own 
 
 Then put in your Net ID password. Note that no characters will show in the terminal while you are typing your password.
 
-## If you have questions:
+### If you have questions:
 - Tell us if you need us to slow down.
 - If you move faster than us, wait to ask your question until we get to the part you are on.
 
@@ -90,7 +91,7 @@ Now, copy and paste the command below to your terminal:
 - If you are in Mac terminal: highlight the text and then hit `Command + C`.
 - If you are in Putty: highlight the phrase to copy.
 
-# Basic essential programming functions
+## Basic essential programming functions
 The general structure of a command line:
     `program [-flags] argument1 argument2 ...`
 
@@ -104,27 +105,27 @@ The general structure of a command line:
 
 - Flags = options to run the program. Flags start with a single dash `-` or two dashes `--`, and change the behaviour of a command.
 
-#### Tips
+### Tips
 - Attention to detail is important.
     - Capitalization matters.
     - Spaces matter.
     - Semi colon, commas matter.
 - Don’t try to rush through everything.
 
-#### pwd
+### pwd
 - `pwd` = print working directory.
 - Tells you where you are sitting in the directory tree.
 - Whenever you start up a terminal, you will start in a special directory called the `home` directory. Every user has their own home directory where they have full access to do whatever they want.
 
 
-#### ls
+### ls
 - `ls` = list the files in the current directory.
 - Another option: add flags to `ls`.
     - For example: `ls -l` 
 - To explore all options to run `ls`, type `man ls`.
 - Within the `man` page, use arrow keys to move up/down/left/right. To quit the `man` page, hit `q`.
 
-#### cd
+### cd
 - `cd` = change directory.
 - Helps you navigate between different directories.
 
@@ -134,7 +135,7 @@ Recheck where you are: `pwd`
 
 Check what is in the directory: `ls`
 
-#### Root vs home; Relative vs. absolute path
+### Root vs home; Relative vs. absolute path
 - Root = the first or top-most directory in a hierarchy. Sometimes you won't have full access in `root`, e.g., when you are on university's high performance clusters.
 - `home` directory is under the root.
 
@@ -160,14 +161,17 @@ Adapted from https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/
     - When we do `cd ..`, this will put us one directory above where we were.
     - When we do `cd`, this will put us back to the `home` directory.
 
-#### Question time!
-1. There's a directory called `hearingData` under the directory `lecture`. How would you go to the directory if you are currently in `unix_basic` directory? How would do go regardless of your current location?
+### Question time!
+1. There's a directory called `hearingData` under the directory `lecture`.
+- How would you go to the directory if you are currently in `unix_basic` directory?
+- How would do go regardless of your current location?
+
 2. Which files listed below are in the `hearingData` directory?
     <p> A. Data8355, Data7493, Data1235 </p>
     <p> B. Data0335, Data0492, Data0225 </p>
 
 
-#### Creation/Destruction
+### Creation/Destruction
 | Command | Description |
 |:-:|:-:|
 |mkdir| makes a directory|
@@ -190,15 +194,15 @@ rm testdir
 
 You cannot `rm testdir` here. Why?
 
-## `rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
+### `rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
 
-#### Shortcuts, wild cards, and tab completion
-##### Tilde ~
+### Shortcuts, wild cards, and tab completion
+#### Tilde ~
 - `~` = a shortcut for your home directory.
 - For example:
     `ls ~`
    
-##### Wild card
+#### Wild card
 - The `*` character matches against any character.
 - For example, the following command list all the files in our current directory that contain "md" at the end of the file names:
     `ls *md`
@@ -208,7 +212,7 @@ You cannot `rm testdir` here. Why?
 1. Do this command: `ls ~/unix_basic/lecture/hearingData/*4*2*`. What do you observe from the patterns of the file names?
 
 
-##### Tab Completion
+#### Tab Completion
 - Navigate to the home directory. Typing out directory names can waste a lot of time. When you start typing out the name of a directory, then hit the tab key, the shell will try to fill in the rest of the directory name. For example, enter:
 
     `cd u<tab>`
@@ -222,7 +226,7 @@ You cannot `rm testdir` here. Why?
 - If you enter `ec<tab>` you will see that tab completion works immediately, because there is only one program name starting with `ec`.
 
     
-# Examining files on the command line
+### Examining files on the command line
 #### clear
 Sometimes your terminal is filled with past commands/outputs, and you want to have a clean terminal to avoid confusion. Then, you can do:
 
@@ -279,10 +283,10 @@ Let's go to the directory `lecture`!
     
 #### Short question time!
 1. Read through the `man` page of `sort`. If I want to sort something **numerically**, what `-flag` should I use?
-    A. `-b`
-    B. `-i`
-    C. `-r`
-    D. `-n`
+    <p> A. `-b` </p> 
+    <p> B. `-i` </p>
+    <p> C. `-r` </p>
+    <p> D. `-n` </p>
 
 
 #### uniq
@@ -332,27 +336,26 @@ Let's go to the directory `lecture`!
     `grep 'protein_id=YP' DiverseCas9s.faa | wc -l`
 In this command, we search for every line that has the pattern `protein_id=YP` in the file `DiverseCas9s.faa`, then immediately count the number of such lines. The normal command of `wc` is `wc -l <input file>`, but here in the pipe, we only see `wc -l`, because the `<input file>` was piped directly from `grep 'protein_id=YP' DiverseCas9s.faa`.
 
-# Conclusion
+## Conclusion
 - The ability to use and navigate with UNIX is essential.
 - Our best friends: Google, `man`, or `<program name> --help`.
 
-### Week 15 - BEDtools
+# Week 15 - BEDTools
 
-# BEDtools
+## BEDTools overview
 
-BEDtools is a software package that allows easy comparison of genomic data
+BEDTools is a software package that allows easy comparison of genomic data
 - Tasks that can be carried out with BEDtools are very common in genomic analysis
-- BEDtools is also available on Galaxy 
-- You may find yourself in a situation where it is
-easier to run BEDtools locally on your computer
-- Can integrate with other UNIX utilities (like sort, wc, etc)
+- BEDTools is also available on Galaxy 
+- You may find yourself in a situation where it is easier to run BEDtools locally on your computer
+- Can integrate with other UNIX utilities (like `sort`, `wc`, etc)
 - Don’t need to upload, run and download from Galaxy
 - May not need the computational power of the Galaxy server for basic (but common) analysis
 
-### BEDTools documentation
+## BEDTools documentation
 [http://bedtools.readthedocs.io/en/latest/index.html](http://bedtools.readthedocs.io/en/latest/index.html)
 
-### bedtools intersect
+## bedtools intersect
 - First, do `module load bedtools2` (this command evokes the program `bedtools2` that has been installed on our cluster. Not all programs are pre-installed like this, but most of the popular ones are). **Every time you log in to your account, you need to load the module again.**
 Let us know when you are able to finish `module load bedtools2`.
 - Make sure you are in the directory `lecture`. Check where you are by doing `pwd`. If you are not in `lecture`, do `cd /home/<your netid>/unix_basic/lecture`.
@@ -368,7 +371,7 @@ bedtools intersect [OPTIONS] -a <FILE> \
 - For whatever file we put right after the flag `-b`, that file is called the B file in this tutorial.
 - For all the image examples, the red boxes mark the resulting intervals of the commands.
 
-#### Default behavior:
+### Default behavior:
 By default, if an overlap is found, `bedtools intersect` reports the shared interval between the two overlapping regions.
 
 For example, `bedtools intersect -a file1.bed -b file2.bed`
@@ -378,27 +381,27 @@ What are A file and B file in this case?
 <img src="/images/bedtools-default.PNG" />
 
 
-#### -wa Reporting the original A feature
+### -wa Reporting the original A feature
 Instead, one can force `bedtools intersect` to report the original “A” feature when an overlap is found. As shown below, the entire “A” feature is reported, not just the portion that overlaps with the “B” feature.
 
 <img src="/images/bedtools-wa.PNG" />
 
-#### -wb Reporting the original B feature
+### -wb Reporting the original B feature
 Similarly, one can force bedtools intersect to report the original “B” feature when an overlap is found. If just -wb is used, the overlapping portion of A will be reported followed by the original “B”. 
 
 <img src="/images/bedtools-wb.PNG" />
 
-#### Both -wa and -wb
+### Both -wa and -wb
 If both `-wa` and `-wb` are used, the originals of both “A” and “B” will be reported.
 
-#### -v
+### -v
 Only report those entries in A that have no overlap in B.
 ```
 bedtools intersect -v -a file1.bed -b file2.bed
 ```
 <img src="/images/bedtools-v.PNG" />
     
-#### -u
+### -u
 Write original A entry once if any overlaps found in B. In other words, just report the fact at least one overlap was found in B.
 
 Try `bedtools intersect -wa -a file2.bed -b file1.bed` and `bedtools intersect -u -wa -a file2.bed -b file1.bed`. What's the difference?
