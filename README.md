@@ -1,20 +1,30 @@
-## Bioinformatics and Computational Biology Programming Workshop 2021
+# Gen 349 - Week 14 - Programming for Biologists
 # Basic UNIX Totorial
 
 **Original material by [Shane Dooley](https://github.com/skDooley/shell_tutorial) and Dr. Geetu Tuteja.
 Modified and compiled by Ha Vu (Tuteja Lab).**
 
-### Outline
+## Outline
 0. Some installations
 1. Introduction to UNIX
 2. Basic essential programs
 3. Examining files on the command line
 4. Conclusion
 
-# Some installations
-Make sure you have access to either Putty, Windows Powershell, or Terminal. If you don't, tell us!
 
-# Introduction to UNIX
+    
+## Some installations
+### Connect to VPN
+**Make sure you have access to either Putty, or Terminal. If you don't, tell us!**
+
+
+## Before we begin
+**Please take notes of the commands!** Suggested format:
+| Command | What it does | Example |
+|:-:|:-:|:-:|
+|  Command | What it does |  |
+
+## Introduction to UNIX
 ### What is UNIX?
 - A common operating system.
 - What is an operating system?
@@ -27,6 +37,7 @@ Make sure you have access to either Putty, Windows Powershell, or Terminal. If y
 <img src="/images/SHELL.png" width="500" height="400"/>
 
 ### UNIX based operating systems
+
 #### Linux
 - Operating system and bundled application programs.
 - Derived from Unix.
@@ -47,28 +58,40 @@ UNIX is useful...
 - when you need to run a program that is not available on Galaxy, and can only run in a UNIX-based environment.
 - when you want to automate repetitive tasks.
 
-# Accessing HPC class and some notes
+## Accessing HPC class and some notes
 Now we will connect to the HPC class for today's tutorial.
 If you are on Putty, put the information as in the picture here:
-<img src="/images/hpc-class.PNG"/>
+
+<img src="/images/hpc-class.PNG" width="330" height="350" />
+
+Replace `hhvu` with your own NetID.
 
 If you are on MACS Terminal, or Windows Powershell, do this:
 ```
-ssh <your-net-id>@hpc-class.its.iastate.edu
+ssh your-net-id@nova.its.iastate.edu
 ```
 
-Then put in your Net ID password. However, the terminal won't show any character when you type in.
+For example: `ssh hhvu@nova.its.iastate.edu` (replace `hhvu` with your own NetID).
 
-In today's session, BCB volunteers' most important goal is to provide help when you need some! In some cases, we may set up a break out room so that volunteers can give you more hands-on instructions. If you are asked to join a break out session, please click "Join". See the picture below.
+Then put in your Net ID password. Note that no characters will show in the terminal while you are typing your password.
 
-<img src="/images/image.png"/>
+### If you have questions:
+- Tell us if you need us to slow down.
+- If you move faster than us, wait to ask your question until we get to the part you are on.
 
 Now, copy and paste the command below to your terminal: 
 
-    git clone https://github.com/hhvu0102/unix_basic.git
+    git clone --single-branch --branch Gen349 https://github.com/hhvu0102/unix_basic.git
 
+### How to paste to terminal:
+- If you are in Mac terminal: `Command + V`
+- If you are in Putty: `Right click`
 
-# Basic essential programs
+### How to copy from terminal to other program:
+- If you are in Mac terminal: highlight the text and then hit `Command + C`.
+- If you are in Putty: highlight the phrase to copy.
+
+## Basic essential programming functions
 The general structure of a command line:
     `program [-flags] argument1 argument2 ...`
 
@@ -82,31 +105,43 @@ The general structure of a command line:
 
 - Flags = options to run the program. Flags start with a single dash `-` or two dashes `--`, and change the behaviour of a command.
 
-#### Tips
+### Tips
 - Attention to detail is important.
     - Capitalization matters.
     - Spaces matter.
     - Semi colon, commas matter.
 - Don’t try to rush through everything.
 
-#### pwd
+### pwd
 - `pwd` = print working directory.
 - Tells you where you are sitting in the directory tree.
 - Whenever you start up a terminal, you will start in a special directory called the `home` directory. Every user has their own home directory where they have full access to do whatever they want.
 
-#### ls
+
+### ls
 - `ls` = list the files in the current directory.
 - Another option: add flags to `ls`.
     - For example: `ls -l` 
 - To explore all options to run `ls`, type `man ls`.
+- Within the `man` page, use arrow keys to move up/down/left/right. To quit the `man` page, hit `q`.
 
-#### cd
+### cd
 - `cd` = change directory.
 - Helps you navigate between different directories.
 
-#### Root vs home; Relative vs. absolute path
-- Root = the first or top-most directory in a hierarchy.
+Now, let's navigate to the directory `lecture`: `cd /home/hhvu/unix_basic/lecture/` (replace `hhvu` with your NetID).
+
+Recheck where you are: `pwd`
+
+Check what is in the directory: `ls`
+
+### Root vs home; Relative vs. absolute path
+- Root = the first or top-most directory in a hierarchy. Sometimes you won't have full access in `root`, e.g., when you are on university's high performance clusters.
 - `home` directory is under the root.
+
+<img src="/images/absolutePathNames.jpg"/>
+Adapted from https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/
+
 - Where you are in the directory tree is called your path.
 - In a path name, different directories and file names are separated by a slash `/`. The root has no name, so it's only one slash `/`.
     - For example:
@@ -116,20 +151,27 @@ The general structure of a command line:
     ls #check what is in the root directory
     ```
 - A path is either relative or absolute:
-    - An absolute path = the root element and the complete directory list. For example, `/home/hhvu/unix_basic` is an absolute path.
-    - A relative path needs to be combined with another path in order to access a file. For example, `unix_basic/practice` is a relative path.
+    - An absolute path = the root element and the complete directory list. For example, `/home/hhvu/unix_basic` is an absolute path. An absolute path always starts with `/`.
+    - A relative path needs to be combined with another path in order to access a file. For example, `unix_basic/lecture` is a relative path.
+
+<img src="/images/pathExample.png" width="500" height="400"/>
+
 - The current directory is denoted by `.`.
 - The parent directory is denoted by `..`.
     - When we do `cd ..`, this will put us one directory above where we were.
+    - When we do `cd`, this will put us back to the `home` directory.
 
-#### Poll time!
-1. There's a directory called `hearingData` under the directory `lecture`. How would do go to the directory?
+### Question time!
+1. There's a directory called `hearingData` under the directory `lecture`.
+- How would you go to the directory if you are currently in `unix_basic` directory?
+- How would do go regardless of your current location?
+
 2. Which files listed below are in the `hearingData` directory?
-A. Data0355, Data0493, Data0235
-B. Data0335, Data0492, Data0225
+    <p> A. Data8355, Data7493, Data1235 </p>
+    <p> B. Data0335, Data0492, Data0225 </p>
 
 
-#### Creation/Destruction
+### Creation/Destruction
 | Command | Description |
 |:-:|:-:|
 |mkdir| makes a directory|
@@ -152,24 +194,25 @@ rm testdir
 
 You cannot `rm testdir` here. Why?
 
-## `rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
+### `rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
 
-#### Shortcuts, wild cards, and tab completion
-##### Tilde ~
+### Shortcuts, wild cards, and tab completion
+#### Tilde ~
 - `~` = a shortcut for your home directory.
 - For example:
     `ls ~`
    
-##### Wild card
+#### Wild card
 - The `*` character matches against any character.
 - For example, the following command list all the files in our current directory that contain "md" at the end of the file names:
     `ls *md`
+- If there is no file with the name pattern `*md` in the directory, it will throw an error `ls: cannot access *md: No such file or directory`.
     
-#### Short poll time!
+#### Short question time!
 1. Do this command: `ls ~/unix_basic/lecture/hearingData/*4*2*`. What do you observe from the patterns of the file names?
 
 
-##### Tab Completion
+#### Tab Completion
 - Navigate to the home directory. Typing out directory names can waste a lot of time. When you start typing out the name of a directory, then hit the tab key, the shell will try to fill in the rest of the directory name. For example, enter:
 
     `cd u<tab>`
@@ -178,11 +221,12 @@ You cannot `rm testdir` here. Why?
 
     `ls ~/unix_basic/lecture/Diverse<tab><tab>`
     
-- When you hit the first tab, nothing happens. The reason is that there are multiple files in the `practice` directory which start with `Diverse`. Thus, the shell does not know which one to fill in. When you hit tab again, the shell will list the possible choices.
-- Tab completion can also fill in the names of programs. For example, enter `e<tab><tab>`. You will see the name of every program that starts with an `e`. One of those is `echo`. If you enter `ec<tab>` you will see that tab completion works.
+- When you hit the first tab, nothing happens. The reason is that there are multiple files in the `lecture` directory which start with `Diverse`. Thus, the shell does not know which one to fill in. When you hit tab again, the shell will list the possible choices.
+- Tab completion can also fill in the names of programs. For example, enter `e<tab><tab>`. You will see the name of every program that starts with an `e`. One of those is `echo`. To quit out of the program list, hit `q`.
+- If you enter `ec<tab>` you will see that tab completion works immediately, because there is only one program name starting with `ec`.
 
     
-# Examining files on the command line
+### Examining files on the command line
 #### clear
 Sometimes your terminal is filled with past commands/outputs, and you want to have a clean terminal to avoid confusion. Then, you can do:
 
@@ -191,6 +235,10 @@ Sometimes your terminal is filled with past commands/outputs, and you want to ha
 or hit `Ctrl + l`.
 
 You can still scroll up to see past commands/outputs.
+
+#### Quick check:
+If I want to go to the directory `lecture` but I don't know where I am now, what should I do?
+Let's go to the directory `lecture`!
 
 #### cat
 - `cat` = concatenate.
@@ -211,7 +259,8 @@ You can still scroll up to see past commands/outputs.
 #### head
 - `head` writes the first ten lines of a file to the screen.
 - To change the number of lines printed, type `head -n <number> <file name>`.
-    - For example, `head -n 5 DiverseCas9s.faa`
+- **Make sure you are in the directory `lecture`**.
+- Let's try: `head -n 5 DiverseCas9s.faa`
 
 #### tail
 - `tail` writes the last ten lines of a file to the screen.
@@ -228,14 +277,16 @@ You can still scroll up to see past commands/outputs.
 - `sort` provides different options to sort a file.
 - For example, `sort DiverseCas9s-names.txt` will sort the file `DiverseCas9s-names.txt` alphabetically based on the first column.
 - If your file has multiple columns, you can use `-k` and the column number to sort by another column than the first (default).
-- For more options in `sort`, type `man sort` or `sort --help` (`-h` may not work in this case).
+- For more options in `sort`, type `man sort` or `sort --help` (`-h` may not work in this case). Reminder: to exit the `man` page when doing `man sort`, hit `q`.
+- Note: `sort -n` will compare according to numerical value, but it cannot understand the value of scientific notation such as `6E+10`.
 
-#### Short poll time!
+    
+#### Short question time!
 1. Read through the `man` page of `sort`. If I want to sort something **numerically**, what `-flag` should I use?
-A. `-b`
-B. `-i`
-C. `-r`
-D. `-n`
+    <p> A. `-b` </p> 
+    <p> B. `-i` </p>
+    <p> C. `-r` </p>
+    <p> D. `-n` </p>
 
 
 #### uniq
@@ -258,7 +309,7 @@ D. `-n`
 
     `wc -l DiverseCas9s.faa`
     
-#### Short poll time!
+#### Short question time!
 1. If I want to count the number of words in a file, what `-flag` should I use?
 2. How many words are there in the file `~/unix_basic/lecture/hearingData/Data0526`?
 
@@ -283,10 +334,74 @@ D. `-n`
 - Save time and memory when programming!
 - For example:
     `grep 'protein_id=YP' DiverseCas9s.faa | wc -l`
+In this command, we search for every line that has the pattern `protein_id=YP` in the file `DiverseCas9s.faa`, then immediately count the number of such lines. The normal command of `wc` is `wc -l <input file>`, but here in the pipe, we only see `wc -l`, because the `<input file>` was piped directly from `grep 'protein_id=YP' DiverseCas9s.faa`.
 
-# Conclusion
+## Conclusion
 - The ability to use and navigate with UNIX is essential.
-- Our best friends: Google, `man`, or `<program name> -h`.
-- Now, let's go to the `practice` directory and work on the practice problems with your group!
+- Our best friends: Google, `man`, or `<program name> --help`.
+
+# Week 15 - BEDTools
+
+## BEDTools overview
+
+BEDTools is a software package that allows easy comparison of genomic data
+- Tasks that can be carried out with BEDtools are very common in genomic analysis
+- BEDTools is also available on Galaxy 
+- You may find yourself in a situation where it is easier to run BEDtools locally on your computer
+- Can integrate with other UNIX utilities (like `sort`, `wc`, etc)
+- Don’t need to upload, run and download from Galaxy
+- May not need the computational power of the Galaxy server for basic (but common) analysis
+
+## BEDTools documentation
+[http://bedtools.readthedocs.io/en/latest/index.html](http://bedtools.readthedocs.io/en/latest/index.html)
+
+## bedtools intersect
+- First, do `module load bedtools2` (this command evokes the program `bedtools2` that has been installed on our cluster. Not all programs are pre-installed like this, but most of the popular ones are). **Every time you log in to your account, you need to load the module again.**
+Let us know when you are able to finish `module load bedtools2`.
+- Make sure you are in the directory `lecture`. Check where you are by doing `pwd`. If you are not in `lecture`, do `cd /home/<your netid>/unix_basic/lecture`.
+
+- `bedtools intersect` allows one to screen for overlaps between two sets of genomic features.
+- Usage:
+```
+bedtools intersect [OPTIONS] -a <FILE> \
+                             -b <FILE1, FILE2, ..., FILEN>
+```
+- When we want to explore `[OPTIONS]` of `bedtools intersect`, use the `flag` `-h`.
+- For whatever file we put right after the flag `-a`, that file is called the A file in this tutorial.
+- For whatever file we put right after the flag `-b`, that file is called the B file in this tutorial.
+- For all the image examples, the red boxes mark the resulting intervals of the commands.
+
+### Default behavior:
+By default, if an overlap is found, `bedtools intersect` reports the shared interval between the two overlapping regions.
+
+For example, `bedtools intersect -a file1.bed -b file2.bed`
+
+What are A file and B file in this case?
+
+<img src="/images/bedtools-default.PNG" />
 
 
+### -wa Reporting the original A feature
+Instead, one can force `bedtools intersect` to report the original “A” feature when an overlap is found. As shown below, the entire “A” feature is reported, not just the portion that overlaps with the “B” feature.
+
+<img src="/images/bedtools-wa.PNG" />
+
+### -wb Reporting the original B feature
+Similarly, one can force bedtools intersect to report the original “B” feature when an overlap is found. If just -wb is used, the overlapping portion of A will be reported followed by the original “B”. 
+
+<img src="/images/bedtools-wb.PNG" />
+
+### Both -wa and -wb
+If both `-wa` and `-wb` are used, the originals of both “A” and “B” will be reported.
+
+### -v
+Only report those entries in A that have no overlap in B.
+```
+bedtools intersect -v -a file1.bed -b file2.bed
+```
+<img src="/images/bedtools-v.PNG" />
+    
+### -u
+Write original A entry once if any overlaps found in B. In other words, just report the fact at least one overlap was found in B.
+
+Try `bedtools intersect -wa -a file2.bed -b file1.bed` and `bedtools intersect -u -wa -a file2.bed -b file1.bed`. What's the difference?
