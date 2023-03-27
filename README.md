@@ -66,7 +66,7 @@ If you are on Putty, put the information as in the picture here:
 
 Replace `hhvu` with your own NetID.
 
-If you are on MACS Terminal, or Windows Powershell, do this:
+If you are on MACS Terminal, do this:
 ```
 ssh your-net-id@nova.its.iastate.edu
 ```
@@ -74,6 +74,10 @@ ssh your-net-id@nova.its.iastate.edu
 For example: `ssh hhvu@nova.its.iastate.edu` (replace `hhvu` with your own NetID).
 
 Then put in your Net ID password. Note that no characters will show in the terminal while you are typing your password.
+
+Next, you will need to enter a verification code obtained from Google Authetication app. More information can be found at https://www.hpc.iastate.edu/guides/nova/access-and-login What we need to pay attention is
+
+<img src="/images/GAtoNova.PNG" width="1030" height="250" />
 
 ### If you have questions:
 - Tell us if you need us to slow down.
