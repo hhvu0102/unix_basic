@@ -68,10 +68,10 @@ Replace `hhvu` with your own NetID.
 
 If you are on MACS Terminal, or Windows Powershell, do this:
 ```
-ssh your-net-id@hpc-class.its.iastate.edu
+ssh your-net-id@nova.its.iastate.edu
 ```
 
-For example: `ssh hhvu@hpc-class.its.iastate.edu` (replace `hhvu` with your own NetID).
+For example: `ssh hhvu@nova.its.iastate.edu` (replace `hhvu` with your own NetID).
 
 Then put in your Net ID password. Note that no characters will show in the terminal while you are typing your password.
 
