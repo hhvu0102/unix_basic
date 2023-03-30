@@ -1,6 +1,8 @@
 # Gen 349 - Week 14 - Programming for Biologists
 # Instruction on how to access High Performance Computer (HPC) Class
 
+All of the following instructions are applicable for first time users of Nova. If you have accessed Nova before (in another class or in your research lab), it will not be necessary.
+
 ## Installation of necessary software
 ### For Windows10/PC Users:
 You need to install Putty. How to Install PuTTY:   
