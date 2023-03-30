@@ -62,18 +62,34 @@ UNIX is useful...
 Now we will connect to the HPC class for today's tutorial.
 If you are on Putty, put the information as in the picture here:
 
-<img src="/images/hpc-class.PNG" width="330" height="350" />
+<img src="/images/hpc-class.PNG" width="360" height="350" />
 
 Replace `hhvu` with your own NetID.
 
-If you are on MACS Terminal, or Windows Powershell, do this:
+If you are on MACS Terminal, do this:
 ```
 ssh your-net-id@nova.its.iastate.edu
 ```
 
 For example: `ssh hhvu@nova.its.iastate.edu` (replace `hhvu` with your own NetID).
 
+Next, you will need to enter a verification code obtained from Google Authetication app. More information can be found at https://www.hpc.iastate.edu/guides/nova/access-and-login What we need to pay attention is
+
+<img src="/images/GAtoNova.PNG" width="1030" height="250" />
+
+Type the GA code from the app on your device when "Verification code:" is prompted.
+
+<img src="/images/verify.PNG" width="1030" height="250" />
+
 Then put in your Net ID password. Note that no characters will show in the terminal while you are typing your password.
+
+Next, we have to request a Class partition. Please copy paste the following command to your terminal:
+
+    salloc -p class-long -N 1 -n 4 -t 3:00:00 -A s2023.gen.349.1
+
+Once the partition is granted, it will prompt some messages similar to the following:
+
+<img src="/images/class-partition.PNG" width="1300" height="125" />
 
 ### If you have questions:
 - Tell us if you need us to slow down.
