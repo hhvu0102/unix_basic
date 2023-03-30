@@ -48,7 +48,7 @@ For example: `ssh hhvu@nova.its.iastate.edu` (replace `hhvu` with your own NetID
 
 If this is the first time you log onto Nova, it will respond with "host key not found, generate hostkey?(yes/no)". Answer yes.
 
-At the first attempt to login a GA account will be created for you, and the email with the instructions will be sent to <your NetID>@iastate.edu.
+At the first attempt to login a GA account will be created for you, and the email with the instructions will be sent to `<your-NetID>@iastate.edu`.
 
 ### Step 2: follow the instruction as in the email from HPC class
 
@@ -57,6 +57,6 @@ After installing and initializing GA as described in the instructions, login to 
 
 Type the GA code from the app on your device when "Verification code:" is prompted.
 
-<img src="/images/verify.PNG" width="830" height="210" />
+<img src="/images/verify.PNG" width="415" height="105" />
 
 Then put in your Net ID password. Note that no characters will show in the terminal while you are typing your password.
