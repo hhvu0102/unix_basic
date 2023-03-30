@@ -83,7 +83,13 @@ Type the GA code from the app on your device when "Verification code:" is prompt
 
 Then put in your Net ID password. Note that no characters will show in the terminal while you are typing your password.
 
+Next, we have to request a Class partition. Please copy paste the following command to your terminal:
 
+    salloc -p class-long -N 1 -n 4 -t 3:00:00 -A s2023.gen.349.1
+
+Once the partition is granted, it will prompt some messages similar to the following:
+
+<img src="/images/class-partition.PNG" width="1300" height="125" />
 
 ### If you have questions:
 - Tell us if you need us to slow down.
