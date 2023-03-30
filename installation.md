@@ -3,24 +3,24 @@
 
 ## Installation of necessary software
 ### For Windows10/PC Users:
-You need to install Putty. How to Install PuTTY:
-1. Go to this Website to download the latest version of Putty: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
-2. There are two versions available for download:
-a. If you know for sure that your PC has a 64-bit processor, download 64-bit: putty-64bit-0.74-installer.msi
-b. If you aren’t sure about your computer’s processor, download 32-bit: putty-0.74-installer.msi
-3. Once you have downloaded PuTTY, double click on the downloaded files and follow the prompts to install.
+You need to install Putty. How to Install PuTTY:   
+1. Go to this Website to download the latest version of Putty: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html   
+2. There are two versions available for download:   
+a. If you know for sure that your PC has a 64-bit processor, download 64-bit: putty-64bit-0.74-installer.msi   
+b. If you aren’t sure about your computer’s processor, download 32-bit: putty-0.74-installer.msi   
+3. Once you have downloaded PuTTY, double click on the downloaded files and follow the prompts to install.   
 
 ### For Mac Users:
 1. Open a Finder window and search for the Application ‘Terminal’.
 2. Double Click on the ‘Terminal’ icon.
 
-<img src="/images/mac_terminal.png" width="1060" height="350" />
+<img src="/images/mac_terminal.png" width="660" height="360" />
 
 ### Installation of Google Authenticator:
 This application is necessary to log in to the class’ high performance computer. Install Google Authenticator app on your mobile device using the instructions found under your device type:
-Google Auth on Android https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-android
-Google Auth on iPhone iPad iPod https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-iphone-ipad-ipod
-Google Auth on Windows Desktop https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-windows
+- Google Auth on Android https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-android
+- Google Auth on iPhone iPad iPod https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-iphone-ipad-ipod
+- Google Auth on Windows Desktop https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-windows
 
 ### VPN (optional - for people who work on HPC off-campus)
 Once you have all of your software installed, you will need to make sure you can access the VPN if you are off campus.   
@@ -29,7 +29,7 @@ https://it.engineering.iastate.edu/how-to/install-and-connect-to-vpn-mac/
 2. Follow these steps to install/connect to VPN on a PC:   
 https://it.engineering.iastate.edu/how-to/install-and-connect-to-vpn-pc/  
 
-## Accessing HPC class and some notes
+## Accessing HPC class
 ### Step 1: ssh to Nova for the first time
 If you are on Putty, put the information as in the picture here:
 
@@ -55,6 +55,6 @@ After installing and initializing GA as described in the instructions, login to 
 
 Type the GA code from the app on your device when "Verification code:" is prompted.
 
-<img src="/images/verify.PNG" width="1030" height="250" />
+<img src="/images/verify.PNG" width="830" height="210" />
 
 Then put in your Net ID password. Note that no characters will show in the terminal while you are typing your password.
