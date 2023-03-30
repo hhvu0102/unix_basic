@@ -18,8 +18,8 @@ b. If you aren’t sure about your computer’s processor, download 32-bit: putt
 
 <img src="/images/mac_terminal.png" width="660" height="360" />
 
-### Installation of Google Authenticator:
-This application is necessary to log in to the class’ high performance computer. Install Google Authenticator app on your mobile device using the instructions found under your device type:
+### Installation of Google Authenticator (GA):
+This application is necessary to log in to the class’ high performance computer. Install Google Authenticator (GA) app on your mobile device using the instructions found under your device type:
 - Google Auth on Android https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-android
 - Google Auth on iPhone iPad iPod https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-iphone-ipad-ipod
 - Google Auth on Windows Desktop https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-windows
