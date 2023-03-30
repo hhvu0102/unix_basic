@@ -75,7 +75,7 @@ For example: `ssh hhvu@nova.its.iastate.edu` (replace `hhvu` with your own NetID
 
 Type the GA code from the app on your device when "Verification code:" is prompted.
 
-<img src="/images/verify.PNG" width="1030" height="250" />
+<img src="/images/verify.PNG" width="490" height="125" />
 
 Then put in your Net ID password. Note that no characters will show in the terminal while you are typing your password.
 
@@ -85,7 +85,7 @@ Next, we have to request a Class partition. Please copy paste the following comm
 
 Once the partition is granted, it will prompt some messages similar to the following:
 
-<img src="/images/class-partition.PNG" width="1300" height="125" />
+<img src="/images/class-partition.PNG" width="950" height="110" />
 
 ### If you have questions:
 - Tell us if you need us to slow down.
