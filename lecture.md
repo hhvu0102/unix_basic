@@ -73,10 +73,6 @@ ssh your-net-id@nova.its.iastate.edu
 
 For example: `ssh hhvu@nova.its.iastate.edu` (replace `hhvu` with your own NetID).
 
-Next, you will need to enter a verification code obtained from Google Authetication app. More information can be found at https://www.hpc.iastate.edu/guides/nova/access-and-login What we need to pay attention is
-
-<img src="/images/GAtoNova.PNG" width="1030" height="250" />
-
 Type the GA code from the app on your device when "Verification code:" is prompted.
 
 <img src="/images/verify.PNG" width="1030" height="250" />
