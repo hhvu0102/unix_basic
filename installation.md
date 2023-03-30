@@ -14,7 +14,7 @@ b. If you aren’t sure about your computer’s processor, download 32-bit: putt
 1. Open a Finder window and search for the Application ‘Terminal’.
 2. Double Click on the ‘Terminal’ icon.
 
-<img src="/images/mac_terminal.png" width="360" height="350" />
+<img src="/images/mac_terminal.png" width="1060" height="350" />
 
 ### Installation of Google Authenticator:
 This application is necessary to log in to the class’ high performance computer. Install Google Authenticator app on your mobile device using the instructions found under your device type:
