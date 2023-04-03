@@ -237,8 +237,6 @@ You cannot `rm testdir` here. Why?
 - Tab completion can also fill in the names of programs. For example, enter `e<tab><tab>`. You will see the name of every program that starts with an `e`. One of those is `echo`. To quit out of the program list, hit `q`.
 - If you enter `ec<tab>` you will see that tab completion works immediately, because there is only one program name starting with `ec`.
 
-    
-### Examining files on the command line
 #### clear
 Sometimes your terminal is filled with past commands/outputs, and you want to have a clean terminal to avoid confusion. Then, you can do:
 
@@ -251,7 +249,8 @@ You can still scroll up to see past commands/outputs.
 #### Quick check:
 If I want to go to the directory `lecture` but I don't know where I am now, what should I do?
 Let's go to the directory `lecture`!
-
+    
+### Examining files on the command line
 #### cat
 - `cat` = concatenate.
 - Displays contents of file on screen.
