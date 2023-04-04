@@ -39,7 +39,7 @@ If you are on Putty, put the information as in the picture here:
 
 Replace `hhvu` with your own NetID.
 
-If you are on MACS Terminal, do this:
+If you are on Mac Terminal, do this:
 ```
 ssh your-net-id@nova.its.iastate.edu
 ```
