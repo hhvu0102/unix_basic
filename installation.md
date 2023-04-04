@@ -33,16 +33,16 @@ If you are on Putty, put the information as in the picture here:
 
 <img src="/images/hpc-class.PNG" width="360" height="350" />
 
-Replace `hhvu` with your own NetID.
+Replace `hhvu` with your own NetID. Then click `Open`.
 
 If you are on Mac Terminal, do this:
 ```
 ssh your-net-id@nova.its.iastate.edu
 ```
 
-For example: `ssh hhvu@nova.its.iastate.edu` (replace `hhvu` with your own NetID).
+For example: `ssh hhvu@nova.its.iastate.edu` (replace `hhvu` with your own NetID). Then click enter.
 
-If this is the first time you log onto Nova, it will respond with "host key not found, generate hostkey?(yes/no)". Answer yes.
+If this is the first time you log onto Nova, it will respond with "host key not found, generate hostkey?(yes/no)". Type in `yes` if you are on a Mac Terminal, or click `Accept` if you are on Putty.
 
 At the first attempt to login a GA account will be created for you, and the email with the instructions will be sent to `<your-NetID>@iastate.edu`.
 
