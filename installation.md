@@ -12,17 +12,13 @@ a. If you know for sure that your PC has a 64-bit processor, download 64-bit: pu
 b. If you aren’t sure about your computer’s processor, download 32-bit: putty-0.78-installer.msi   
 3. Once you have downloaded PuTTY, double click on the downloaded files and follow the prompts to install.   
 
+**Notes:** If you want to paste in Putty environment, do right click.   
+
 ### For Mac Users:
 1. Open a Finder window and search for the Application ‘Terminal’.
 2. Double Click on the ‘Terminal’ icon.
 
 <img src="/images/mac_terminal.png" width="660" height="360" />
-
-### Installation of Google Authenticator (GA):
-This application is necessary to log in to the class’ high performance computer. Install Google Authenticator (GA) app on your mobile device using the instructions found under your device type:
-- Google Auth on Android https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-android
-- Google Auth on iPhone iPad iPod https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-iphone-ipad-ipod
-- Google Auth on Windows Desktop https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-windows
 
 ### VPN (optional - for people who work on HPC off-campus)
 Once you have all of your software installed, you will need to make sure you can access the VPN if you are off campus.   
