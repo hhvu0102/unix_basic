@@ -8,7 +8,7 @@ All of the following instructions are applicable for first time users of Nova. I
 You need to install Putty. How to Install PuTTY:   
 1. Go to this Website to download the latest version of Putty: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html   
 2. There are two versions available for download:   
-a. If you know for sure that your PC has a 64-bit processor, download 64-bit: putty-64bit-0.78-installer.msi 
+a. If you know for sure that your PC has a 64-bit processor, download 64-bit: putty-64bit-0.78-installer.msi     
 b. If you aren’t sure about your computer’s processor, download 32-bit: putty-0.78-installer.msi   
 3. Once you have downloaded PuTTY, double click on the downloaded files and follow the prompts to install.   
 
