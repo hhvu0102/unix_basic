@@ -64,16 +64,16 @@ If you are on Putty, put the information as in the picture here:
 
 <img src="/images/hpc-class.PNG" width="360" height="350" />
 
-Replace `hhvu` with your own NetID.
+Replace `hhvu` with your own NetID. Click `Open`.
 
 If you are on MACS Terminal, do this:
 ```
 ssh your-net-id@nova.its.iastate.edu
 ```
 
-For example: `ssh hhvu@nova.its.iastate.edu` (replace `hhvu` with your own NetID).
+For example: `ssh hhvu@nova.its.iastate.edu` (replace `hhvu` with your own NetID). Then click enter.
 
-Type the GA code from the app on your device when "Verification code:" is prompted.
+Type the GA code from the app on your device when "Verification code:" is prompted. Note that no characters will show in the terminal while you are typing the code. Then click enter.
 
 <img src="/images/verify.PNG" width="490" height="125" />
 
