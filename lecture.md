@@ -5,21 +5,16 @@
 Modified and compiled by Ha Vu (Tuteja Lab).**
 
 ## Outline
-0. Some installations
+0. Before you begin
 1. Introduction to UNIX
 2. Basic essential programs
 3. Examining files on the command line
 4. Conclusion
 
 
-    
-## Some installations
-### Connect to VPN
-
-*Make sure you have access to either Putty, or Terminal. If you don't, tell us!**
-
-
 ## Before we begin
+**Make sure you have completed the software installation we covered in Week 12** in the following link https://github.com/hhvu0102/unix_basic/blob/main/installation.md. You won't be able to complete work in Week 14 and 15 without this step.
+
 **Please take notes of the commands!** Suggested format:
 | Command | What it does | Example |
 |:-:|:-:|:-:|
@@ -67,7 +62,7 @@ If you are on Putty, put the information as in the picture here:
 
 Replace `hhvu` with your own NetID. Click `Open`.
 
-If you are on MACS Terminal, do this:
+If you are on a Mac Terminal, do this:
 ```
 ssh your-net-id@nova.its.iastate.edu
 ```
