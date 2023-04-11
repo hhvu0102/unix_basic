@@ -1,5 +1,5 @@
 # Gen 349 - Week 14 - Programming for Biologists
-# Basic UNIX Totorial
+# Basic UNIX Tutorial
 
 **Original material by [Shane Dooley](https://github.com/skDooley/shell_tutorial) and Dr. Geetu Tuteja.
 Modified and compiled by Ha Vu (Tuteja Lab).**
@@ -15,7 +15,8 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
     
 ## Some installations
 ### Connect to VPN
-**Make sure you have access to either Putty, or Terminal. If you don't, tell us!**
+
+*Make sure you have access to either Putty, or Terminal. If you don't, tell us!**
 
 
 ## Before we begin
@@ -207,6 +208,7 @@ rm testdir
 You cannot `rm testdir` here. Why?
 
 ### `rm -r` HAS GIVEN ME NIGHTMARES. BE CAREFUL!
+`rm -r` will remove non-empty directories and all the files within them.    
 
 ### Shortcuts, wild cards, and tab completion
 #### Tilde ~
@@ -215,7 +217,7 @@ You cannot `rm testdir` here. Why?
     `ls ~`
    
 #### Wild card
-- The `*` character matches against any character.
+- The `*` character matches against any set of characters.
 - For example, the following command list all the files in our current directory that contain "md" at the end of the file names:
     `ls *md`
 - If there is no file with the name pattern `*md` in the directory, it will throw an error `ls: cannot access *md: No such file or directory`.
