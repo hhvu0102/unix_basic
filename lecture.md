@@ -9,7 +9,7 @@ Modified and compiled by Ha Vu (Tuteja Lab).**
 1. Introduction to UNIX
 2. Basic essential programs
 3. Examining files on the command line
-4. Conclusion
+4. Conclusions
 
 
 ## Before we begin
@@ -344,7 +344,7 @@ Let's go to the directory `lecture`!
     `grep 'protein_id=YP' DiverseCas9s.faa | wc -l`
 In this command, we search for every line that has the pattern `protein_id=YP` in the file `DiverseCas9s.faa`, then immediately count the number of such lines. The normal command of `wc` is `wc -l <input file>`, but here in the pipe, we only see `wc -l`, because the `<input file>` was piped directly from `grep 'protein_id=YP' DiverseCas9s.faa`.
 
-## Conclusion
+## Conclusions
 - The ability to use and navigate with UNIX is essential.
 - Our best friends: Google, `man`, or `<program name> --help`.
 
